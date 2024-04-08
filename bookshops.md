@@ -10,6 +10,8 @@ Medina Bookshop, Cowes, Isle of Wight, https://medinabookshop.com/events
 
 ## Along the South Coast
 
+Lyme Regis Bookshop (also part of Grove, Ilkley group) https://www.lymebookshop.com/events/
+
 Steyning Bookshop, Steyning, Sussex, https://www.steyningbookshop.co.uk/events/
 
 Kemptown Bookshop, Brighton https://www.kemptownbookshop.co.uk/room-hire/
@@ -28,13 +30,15 @@ Scriveners Bookshop, Buxton, https://scrivenersbooks.co.uk/, (eg https://www.bux
 
 Little Ripon Bookshop, https://www.littleriponbookshop.co.uk/events
 
-Grove Bookshop, Ilkley https://www.grovebookshop.com/events/ 
+Grove Bookshop, Ilkley (also groupeed with Bookhaus Bristol and Lyme Regis) https://www.grovebookshop.com/events/ 
 
 ## To the left and up
 
 Small City Bookshop, Bristol https://www.thesmallcitybookshop.co.uk/events
 
 Heron Books, Bristol https://www.heronbooks.co.uk/events/
+
+Bookhaus Bristal (also part of Grove, Ilkley group) https://www.bookhausbristol.com/events/
 
 Rossiter Books, Ross-on-Wye, https://rossiterbooks.co.uk/ (also Monmouth?, Leominster?, Cheltenham?, Malvern?; Carol Bloomfield?)
 
