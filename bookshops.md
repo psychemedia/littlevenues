@@ -1,6 +1,6 @@
 # Bookshops
 
-Bookshops with performance opportunities; dirrection's relative to the Isle of Wight...
+Bookshops with event (performance?) opportunities; dirrection's relative to the Isle of Wight...
 
 ## Home
 
