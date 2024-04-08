@@ -43,3 +43,36 @@ Booka Bookshop, Oswestry (also Bridgnorth?) https://www.bookabookshop.co.uk/even
 ## South-West...
 
 Edge of the World Bookshop, Penzance, https://edgeoftheworldbookshop.co.uk/news-archive/
+
+
+## Bookshop Band
+
+https://www.thebookshopband.co.uk/tour
+
+13 Apr 
+Quarrymen's Arts Centre Creetown, United Kingdom
+Music Nights at the Q Club The Bookshop Band write songs inspired by books , formed from an artistic love affair between a duo of English Folk singer songwriters and a multi award winning independent bookshop in the UK. They write and perform songs inspired b...
+ 
+19 Apr 
+Verey Books Pooley Bridge, United Kingdom
+The award winning Bookshop Band came to life as an artistic collaboration with their local bookshoop Mr B’s Emporium of Reading Delights in 2010. They write and perform songs inspired by books and released 13 book-inspired albums collaborating with over 100 au...
+ 
+21 Apr 
+The Heath Bookshop Birmingham, United Kingdom
+Join the acclaimed Bookshop Band for a chilled out Sunday lunchtime performance. The artistic love-affair between a group of award winning songwriters and an independent bookshop in the UK, Mr B’s Emporium of Reading Delights - come and listen to Beth Porter a...
+ 
+27 Apr 
+Guernsey Literary Festival 2024 Guernsey, Guernsey
+Join The Bookshop Band for a unique and magical concert of songs inspired by books, from Margaret Atwood to Robert Macfarlane, all curated by the multi-award-winning independent bookshop Mr B’s Emporium of Reading Delights. The concert will include songs from...
+ 
+18 May 
+Chalfont St Giles Literary Festival 2024 Chalfont Saint Giles, United Kingdom
+The award winning Bookshop Band came to life as an artistic collaboration with its local bookshop in Bath in 2010. The members of the band write and perform songs inspired by books and have released 13 book-inspired albums, collaborating with over 100 authors ...
+ 
+19 May 
+Tetbury Goods Shed Arts Centre Tetbury, United Kingdom
+Join the acclaimed Bookshop Band for an evening performance, including songs from their new album, Emerge, Return, produced by Pete Townshend. The band started as an artistic love-affair between a group of award winning songwriters and an independent bookshop ...
+ 
+08 Jun 
+Crossing The Tees Book Festival 2024 Darlington, United Kingdom
+Please check the website for up to date start info and ticketing. https://www.crossingthetees.org/whats-on/
