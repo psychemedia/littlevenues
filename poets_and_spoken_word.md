@@ -225,12 +225,130 @@ Pound Arts in Corsham, Wiltshire is the American's next staging post on Sat 13th
 
 On Mon 15th July John will be on the bill at 7.00pm at the Balham Comedy Festival. No further details as yet.
 
+## Luke Wright
+
+https://www.lukewright.co.uk/upcoming-events/
+
+April 13, 2024
+Joy!
+12:30 pm, Halesworth, INK @ The Cut
+
+April 18, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Clevedon, Theatre Shop
+
+April 19, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Oundle, Stahl Theatre
+
+April 20, 2024
+John Cooper Clarke Tour
+8:00 pm, Poole, Lighthouse
+
+April 22, 2024
+John Cooper Clarke Tour
+8:00 pm, Milton Keynes, The Stables
+
+April 25, 2024
+John Cooper Clarke Tour
+8:00 pm, Salford, The Lowry
+
+April 26, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Presteigne, Mid Border Arts
+
+April 27, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Stamford, Stamford Arts Centre
+
+May 2, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Manchester, Edge Arts Centre & Theatre
+
+May 9, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Trimley St Mary, Felixstowe, Two Sisters Arts Centre
+
+May 10, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Sudbury, Sudbury Arts Centre
+
+May 15, 2024
+Luke Wright’s Silver Jubilee
+7:45 pm, Scarborough, Stephen Joseph Theatre
+
+May 16, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Harrogate, Harrogate Theatre
+
+May 22, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Liverpool, Leaf
+
+May 23, 2024
+Luke Wright’s Silver Jubilee
+7:00 pm, Grimsby, Docks Academy
+
+May 24, 2024
+Luke Wright’s Silver Jubilee
+5:00 pm, Norwich, Norfolk & Norwich Festival Speigeltent
+
+June 5, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Chelmsford, Chelmsford Theatre Studio
+
+June 6, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Poole, Lighthouse
+
+June 7, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Cardiff, Sherman Theatre
+
+June 12, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Nottingham, Nottingham Poetry Festival @ The Old Cold Store
+
+June 13, 2024
+Luke Wright’s Silver Jubilee
+8:00 pm, Stockton-on-Tees, ARC
+
+June 20, 2024
+Luke Wright’s Silver Jubilee
+7:30 pm, Ipswich, Wolsey Theatre
+
+June 22, 2024
+Joy!
+5:30 pm, Lowestoft, First Light Festival (First Word Stage)
+
+June 25, 2024
+John Cooper Clarke Tour
+7:30 pm, Reading, Town Hall
+
+June 26, 2024
+John Cooper Clarke Tour
+7:30 pm, Taunton, Brewhouse
+
+June 29, 2024
+Glastonbury Festival (Poetry & Words Tent)
+4:00 pm, Pilton, Glastonbury Festival of Performing Arts
+
+June 29, 2024
+Glastonbury Festival (Cabaret Tent)
+7:00 pm, Pilton, Glastonbury Festival of Performing Arts
+
+July 24, 2024
+Joy!
+7:45 pm, Petworth, Leconfield Hall @ Petworth Festival
+
+August 13, 2024
+Joy! 31st July – 13th August
+2:55 pm, Edinburgh, Pleasance Dome
+
 
 ## Bassie Gracie
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/318fbd5f-76f7-4bf9-af66-4415ae8f8e0d)
-
-
 
 7 Mar LIVERPOOL Capstone Theatre
 
