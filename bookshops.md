@@ -38,6 +38,8 @@ Heron Books, Bristol https://www.heronbooks.co.uk/events/
 
 Rossiter Books, Ross-on-Wye, https://rossiterbooks.co.uk/ (also Monmouth?, Leominster?, Cheltenham?, Malvern?; Carol Bloomfield?)
 
+The Heath Bookshop, Kings Heath, Birmingham https://linktr.ee/theheathbookshop
+
 Booka Bookshop, Oswestry (also Bridgnorth?) https://www.bookabookshop.co.uk/events/
 
 ## South-West...
