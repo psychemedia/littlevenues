@@ -7,9 +7,33 @@ Occasionally storytellers go on tour...
 Adverse Camber
 https://adversecamber.org/
 
+## Devil's Vio,lin
+
+2023
+
+5/7 May – Tobacco Factory Theatre, Bristol – tickets here
+
+11 May – Penygraig Valleys Kids Soar Centre – tickets here
+
+12 May – The Front Room, Weston-Super-Mare – tickets here
+
+13 May – Geddington, Northamptonshire – call 07581 210 454
+
+19 May – Llanvetherine Barn, Llandewi Skirrid – tickets here
+
+24 Jun – The Bureau, Blackburn – tickets here
+
+25 Jun – Felin Uchaf – tickets here
+
+9 Jul – Beyond the Border Festival – tickets here
+
+
+
 ## ​Katy Cawkwell & Lucy Lill
 
 https://www.wildvisions.org/
+
+2024
 
 ​20 Jan WINTERBOURNE STICKLAND Artsreach
 
