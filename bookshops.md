@@ -30,7 +30,11 @@ Little Ripon Bookshop, https://www.littleriponbookshop.co.uk/events
 
 Grove Bookshop, Ilkley https://www.grovebookshop.com/events/ 
 
-## North and to the left
+## To the left and up
+
+Small City Bookshop, Bristol https://www.thesmallcitybookshop.co.uk/events
+
+Heron Books, Bristol https://www.heronbooks.co.uk/events/
 
 Rossiter Books, Ross-on-Wye, https://rossiterbooks.co.uk/ (also Monmouth?, Leominster?, Cheltenham?, Malvern?; Carol Bloomfield?)
 
