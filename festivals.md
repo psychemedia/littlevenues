@@ -47,6 +47,7 @@
   - https://www.petfringe.co.uk/
   - West Sussex
   - Mid-Late September?
+  - Application: ?
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
