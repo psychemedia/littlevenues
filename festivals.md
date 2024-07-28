@@ -25,7 +25,7 @@
   - Mid-June
   - Application: ?
 
--  Ports Fest
+- Ports Fest
   - https://portsfest.co.uk/
   - Portsmouth
   - Late June
@@ -47,7 +47,6 @@
   - https://www.petfringe.co.uk/
   - West Sussex
   - Mid-Late September?
-  - 
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
