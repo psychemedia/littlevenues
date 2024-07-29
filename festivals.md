@@ -43,6 +43,12 @@
   - Late July
   - Application: February?
 
+- Sidmouth FOlk Festival
+  - https://sidmouthfolkfestival.co.uk/
+  - Devon
+  - Early August
+  - 
+
 - Petworth Fringe
   - https://www.petfringe.co.uk/
   - West Sussex
