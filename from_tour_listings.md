@@ -229,6 +229,8 @@ The Ship Aground, Stafford
 
 ## Paul Armfield
 
+![image](https://github.com/user-attachments/assets/05a61c2a-9243-47d1-b2ee-5834e3ff7a74)
+
 
 1. FRI NOV 8 - BELPER - QUEEN'S HEAD  https://queensheadbelper.weebly.com/
 2. SAT NOV 9 - CLUN - POSTCARD CAFE https://www.facebook.com/profile.php?id=100057250697663
