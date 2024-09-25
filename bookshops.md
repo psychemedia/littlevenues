@@ -10,6 +10,8 @@ Medina Bookshop, Cowes, Isle of Wight, https://medinabookshop.com/events
 
 ## Along the South Coast
 
+October Books, Southampton, https://www.octoberbooks.org/regular-events
+
 Lyme Regis Bookshop (also part of Grove, Ilkley group) https://www.lymebookshop.com/events/
 
 Steyning Bookshop, Steyning, Sussex, https://www.steyningbookshop.co.uk/events/
