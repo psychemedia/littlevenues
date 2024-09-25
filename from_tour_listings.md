@@ -225,3 +225,14 @@ The Crauford Arms, Milton Keynes
 Sat, Oct 29, 2022
 Tony Wright
 The Ship Aground, Stafford
+
+
+## Paul Armfield
+
+
+1. FRI NOV 8 - BELPER - QUEEN'S HEAD  https://queensheadbelper.weebly.com/
+2. SAT NOV 9 - CLUN - POSTCARD CAFE https://www.facebook.com/profile.php?id=100057250697663
+3. SUN NOV 10 - CHIPPENHAM - COUSIN NORMAN'S https://www.facebook.com/cousinnormans
+4. TUE NOV 12 - SALISBURY - VANNER GALLERY https://www.vannergallery.com/
+5. WED NOV 13 - SOUTHAMPTON - OCTOBER BOOKS https://www.octoberbooks.org/events
+6. FRI NOV 15 - HASTINGS - JENNY LIND https://jennylindhastings.co.uk/whats-on/
