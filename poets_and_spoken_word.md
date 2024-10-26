@@ -3,6 +3,9 @@
 
 ## Attila the Stockbroker
 
+![image](https://github.com/user-attachments/assets/be989f46-174e-4b20-8b4a-97c592a1c54a)
+
+
 SUN, 7 APR
 Doctors of Madness at the Duke of Wellington Shoreham (6.30pm) One of my favourite bands of all time
 Duke Of-Wellington  · Shoreham-by-Sea
