@@ -31,6 +31,11 @@
   - Late June
   - Application: ?
 
+- Watford Fringe
+  - https://watfringe.co.uk
+  - Watford
+  - July
+  - Application: January
 
 - Tunbrdge Wells Fringe
   - https://twfringe.com/
@@ -38,11 +43,23 @@
   - Early July
   - Application: ?
 
+- Buxton Fringe
+  - https://www.buxtonfringe.org.uk/
+  - Buxton
+  - Early-late July
+  - Application: DIY / December
+  
 - Ventnor Fringe
   - https://vfringe.co.uk/takepart/
   - Isle of Wight
   - Late July
-  - Application: February?
+  - Application: November
+
+- Warwick Folk Festival and Fringe
+  - https://warwickfolkfestival.co.uk/
+  - Warwick
+  - Late July
+  - Application:
 
 - Portsmouth Fringe
   - https://www.portsmouthfringe.com/
@@ -54,7 +71,7 @@
   - https://sidmouthfolkfestival.co.uk/
   - Devon
   - Early August
-  - 
+  - Application: ?
 
 - Petworth Fringe
   - https://www.petfringe.co.uk/
