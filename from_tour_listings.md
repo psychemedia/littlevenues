@@ -169,12 +169,15 @@ Bristol, Fleece
 
 ## Jess Silk
 
+![image](https://github.com/user-attachments/assets/69e433bd-7431-41d5-add1-9dccf31dfc15)
+
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/a0905285-0f9b-4c54-a2ed-620e796acf13)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/686853f4-394f-4b5e-8b8f-69d2e21ed2bb)
 
 ## Beans on Toast
 
+![image](https://github.com/user-attachments/assets/0a67ad94-dd8c-4ca6-9800-ca459edc1534)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/bc9d4366-2f06-459c-8863-d1c7dbd078f7)
 
