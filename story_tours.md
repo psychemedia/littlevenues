@@ -52,3 +52,21 @@ https://www.wildvisions.org/
 2 Mar BATH Rondo Theatre
 
 3 Mar LEICESTER Guildhall
+
+## Jim Causley / Miranda Sykes 
+
+Sabine baring Gould Centenary show
+
+![image](https://github.com/user-attachments/assets/16d77683-2a9c-4caf-b37f-76fbb8a763dd)
+
+20 OCT BRISTOL FOLK HOUSE
+21 OCT COLCHESTER ARTS
+22 OCT FAKENHAM - SWANTON NOVERS 
+23 OCT ANDOVER - WHERWELL HOMEGUARD
+24 OCT CALSTOCK ARTS
+25 OCT London Folk Music - HEATH STREET BAPTIST CHURCH
+26 OCT WOTTON UNDER EDGE ARTS
+27 OCT EXETER - Exeter Phoenix
+31 OCT St. Michael the Archangel, Chagford
+02 NOV BARTON UPON HUMBER ROPEWALK
+03 NOV SHEFFIELD - SAMUEL WORTH CHAPEL
