@@ -4,6 +4,47 @@ Is there scope for booking stroytellers into small venues?
 
 First up, what sorts of venues are there?
 
+
+## Attila the Stockbroker
+
+![image](https://github.com/user-attachments/assets/be989f46-174e-4b20-8b4a-97c592a1c54a)
+
+
+OCTOBER 11 IPSWICH Steamboat Tavern with Barnstormer 1649 and East Town Pirates  
+12 GELDESTON Barnstormer 1649 and solo poetry set  
+17 NORTHAMPTON The Lab  
+18 HORSFORTH Brewery Taproom  
+19 WAKEFIELD Red Shed with Calum Baird  
+20 HALIFAX Town Festival of Music and Words with Calum Baird (1pm)  
+27 LEWES Con Club (Stand up to Racism, on 6.30 pm)  
+NOVEMBER 2 OXFORD Florence Park Community Centre Barnstormer 1649 and solo poetry set 
+3 BATH Bell Inn Barnstormer 1649 and solo poetry set  
+13 MARPLE The Strines Nightingale  
+14 STOURBRIDGE Katie Fitzgerald's  
+15 DUMFRIES Riverside Tap  
+16 ROTHESAY Isle of Bute Seasports Club  
+17 GLASGOW Nice n Sleazy with Calum Baird (1pm)  
+DECEMBER 4 BIRMINGHAM Kitchen Garden Cafe  
+5 CAMBRIDGE Devonshire Arms  
+6 DERBY Victoria Inn  
+7 LEICESTER Real Ale Classroom  
+8 LONDON The Dublin Castle (pm) Barnstormer 1649's 30th Anniversary London Gig with special guests Robin Ince and Martin Newell plus Attila solo poetry set 
+JANUARY 2025 24 SUTTON Sound Lounge  
+30 LOUGHBOROUGH Needle & Pin  
+31 WIRKSWORTH Red Lion Hotel 
+FEBRUARY 5 SWANSEA Hippos  
+6 CARMARTHEN Cwrw  
+7 DENBIGH Theatr Twm o'r Nant  
+8 RHAYADER The Lost ARC  
+9 CARDIGAN The Cellar Cardigan  
+27 ASHBURTON Ashburton Arts Centre  
+28 FALMOUTH Cornish Bank  
+MARCH 1ST AUSTELL Arts Centre  
+2 CORFE CASTLE Sandy Hill Arts  
+14 PRESTON New Continental  
+15 ASHTON Station Hotel (We Shall Overcome benefit)  
+16 GLOSSOP Labour Club 
+
 ## Scott Doonican
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/1c3c820d-2891-4d2c-8276-1adafec06d4f)
