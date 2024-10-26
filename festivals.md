@@ -31,6 +31,7 @@
   - Late June
   - Application: ?
 
+
 - Tunbrdge Wells Fringe
   - https://twfringe.com/
   - Kent
@@ -43,7 +44,13 @@
   - Late July
   - Application: February?
 
-- Sidmouth FOlk Festival
+- Portsmouth Fringe
+  - https://www.portsmouthfringe.com/
+  - Portsmouth
+  - End July / start August
+  - Application: ?
+  
+- Sidmouth Folk Festival
   - https://sidmouthfolkfestival.co.uk/
   - Devon
   - Early August
