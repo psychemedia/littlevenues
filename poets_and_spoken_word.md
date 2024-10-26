@@ -350,6 +350,10 @@ Joy! 31st July – 13th August
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/318fbd5f-76f7-4bf9-af66-4415ae8f8e0d)
 
+## Katy Cawkwell & Lucy Lill
+
+Wild Visions, Untamed Myth https://www.wildvisions.org/
+
 7 Mar LIVERPOOL Capstone Theatre
 
 8 Mar LEEDS Carriageworks Theatre
@@ -365,4 +369,33 @@ There will be two Introduction to Storytelling workshops alongside the tour:
 1-3pm 4 Feb CAMBRIDGE Junction
 
 5.30-7.30pm 3 Mar LEICESTER Central Library
+
+
+# Milly Jackday (Nicola Hart)
+
+https://www.millyjackdaw.com/
+
+25th September 2024. Ffwrnes Theatre, Llaneli. 0345 2263510
+
+28th September 2024. The Nurture Centre, Carmarthen. 01267 231127
+
+11th October 2024. Canolfan llwynihirion/ Brynberian Centre, Pembrokeshire. 07767 124464
+
+24th October 2024. The Queens Hall, Narberth. 01834 861212
+
+1st Novemeber 2024. Canolfan Ucheldre Arts Centre, Holyhead. 01407 763361
+
+8th November 2024.Canolfan y Celfyddydau Aberystwyth Arts Centre. 01970 623232
+
+14th November 2024.Theatre Brycheiniog. Brecon. 01874 611622
+
+16th November 2024. The Lost Arc, Rhayader. 01597 811226
+
+15th March 2025. Cilcain Village Hall/Neuadd y Pentre, Cilcain.
+
+29th March 2025. Canolfan y Celfyddydau Memo Arts Centre, Barry. 01446 738622
+
+Coed Hills Rural Artspace. Cowbridge. Date to be confirmed.
+
+
 
