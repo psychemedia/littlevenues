@@ -52,6 +52,19 @@ Booka Bookshop, Oswestry (also Bridgnorth?) https://www.bookabookshop.co.uk/even
 
 Edge of the World Bookshop, Penzance, https://edgeoftheworldbookshop.co.uk/news-archive/
 
+## Protest / radical
+
+Alliance of radical booksellers https://www.radicalbooksellers.co.uk/
+
+- Caracol https://caracolbooks.co.uk/ Norwich  caracolbooks@gmail.com
+- News from Nowhere https://newsfromnowhere.org.uk/ Liverpool
+- Bookhaus https://www.bookhausbristol.com/ Bristol info@bookhausbristol.com
+- Cowley Club https://cowley.club/ Brighton
+- Five Leaves https://fiveleavesbookshop.co.uk/ Nottingham
+- La Biblioteka https://labiblioteka.co/ Sheffield
+- October Books https://octoberbooks.org/pages/events info@octoberbooks.org
+- Rubicund https://www.rubicund.co.uk/ Falmouth
+- Fokestone Bookshop https://www.thefolkestonebookshop.co.uk/ Folkestone
 
 ## Bookshop Band
 
