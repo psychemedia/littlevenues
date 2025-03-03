@@ -7,6 +7,9 @@ First up, what sorts of venues are there?
 
 ## Attila the Stockbroker
 
+![image](https://github.com/user-attachments/assets/9a5afaaa-1f93-4e59-ae17-0d1b4ce97da7)
+
+
 ![image](https://github.com/user-attachments/assets/be989f46-174e-4b20-8b4a-97c592a1c54a)
 
 
@@ -50,7 +53,14 @@ MARCH 1ST AUSTELL Arts Centre
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/1c3c820d-2891-4d2c-8276-1adafec06d4f)
 
 
+## Nick Parker / Samantics
+
+![image](https://github.com/user-attachments/assets/4af72629-90a3-4fa2-a657-79dff6539bd5)
+
+
 ## Gaz Brookfield:
+
+![image](https://github.com/user-attachments/assets/a3f2c668-d3a4-47b0-a0fe-f15940d55ff5)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/db87cece-65a8-46f6-821e-c91358d2f349)
 
@@ -282,3 +292,8 @@ The Ship Aground, Stafford
 4. TUE NOV 12 - SALISBURY - VANNER GALLERY https://www.vannergallery.com/
 5. WED NOV 13 - SOUTHAMPTON - OCTOBER BOOKS https://www.octoberbooks.org/events
 6. FRI NOV 15 - HASTINGS - JENNY LIND https://jennylindhastings.co.uk/whats-on/
+
+## Joe Solo
+
+![image](https://github.com/user-attachments/assets/ac9fc17c-5dbe-4d63-9513-c1c23ba577bf)
+
