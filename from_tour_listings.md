@@ -187,6 +187,25 @@ Bristol, Fleece
 
 ## Beans on Toast
 
+![image](https://github.com/user-attachments/assets/151b1807-771c-44cc-82f7-4a996f65fb6d)
+
+12/3 - LIVERPOOL, Cavern Club  
+13/3 - MANCHESTER, Band on the Wall  
+14/3 - KENDAL, Brewery Arts  
+15/3 - NEWCASTLE, The Grove  
+16/3 - EDINBURGH, Voodoo Rooms  
+18/3 - SHEFFIELD, Leadmill  
+19/3 - NOTTINGHAM, Rescue Rooms  
+20/3 - LEEDS, Brudenell Social Club  
+21/3 - CARDIFF, Clwb Ifor Bach  
+22/3 - BRISTOL, Beacon  
+23/3 - PLYMOUTH, The Junction  
+25/3 - SOUTHAMPTON, Joiners  
+26/3 - BIRMINGHAM, Castle and Falcon  
+27/3 - COLCHESTER, Arts Centre  
+28/3 - CAMBRIDGE, Junction  
+29/3 - LONDON, The Dome  
+
 ![image](https://github.com/user-attachments/assets/0a67ad94-dd8c-4ca6-9800-ca459edc1534)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/bc9d4366-2f06-459c-8863-d1c7dbd078f7)
