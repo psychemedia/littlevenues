@@ -65,6 +65,7 @@ Alliance of radical booksellers https://www.radicalbooksellers.co.uk/
 - October Books https://octoberbooks.org/pages/events info@octoberbooks.org
 - Rubicund https://www.rubicund.co.uk/ Falmouth
 - Fokestone Bookshop https://www.thefolkestonebookshop.co.uk/ Folkestone
+- People's Bookshop https://www.facebook.com/PeoplesBookshop Durham
 
 ## Bookshop Band
 
