@@ -40,7 +40,7 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Late June
   - Application: ?
 
- - Barnstaple Fringe / TheatreFest
+- Barnstaple Fringe / TheatreFest
   - https://www.theatrefest.co.uk/program/shows
   - Barnstaple, North Devon
   - Late June
