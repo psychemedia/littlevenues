@@ -21,7 +21,13 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Chichester
   - Early June
   - Application: December?/January?
- 
+
+- Wimborne Minster Folk Festival
+  - https://www.wmff.co.uk/
+  - Wimoborne Minster, Dorset
+  - Early June
+  - Application: ?
+
 - Ludlow Fringe
   - https://www.ludlowfringe.co.uk/
   - Shropshire
@@ -31,6 +37,12 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
 - Ports Fest
   - https://portsfest.co.uk/
   - Portsmouth
+  - Late June
+  - Application: ?
+
+ - Barnstaple Fringe / TheatreFest
+  - https://www.theatrefest.co.uk/program/shows
+  - Barnstaple, North Devon
   - Late June
   - Application: ?
 
@@ -51,12 +63,18 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Buxton
   - Early-late July
   - Application: DIY / December
-  
+
+- Tolpuddle Martyrs Festival
+  - https://www.tolpuddlemartyrs.org.uk/festival/taking-part/performing-at-tolpuddle 
+  - Tolpuddle
+  - Mid July
+  - Application: September-November
+
 - Ventnor Fringe
   - https://vfringe.co.uk/takepart/
   - Isle of Wight
   - Late July
-  - Application: November
+  - Application: November-March
 
 - Warwick Folk Festival and Fringe
   - https://warwickfolkfestival.co.uk/
@@ -65,7 +83,7 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Application:
 
 - Portsmouth Fringe
-  - https://www.portsmouthfringe.com/
+  - https://portsmouth-fringe.project1031.com/ / https://www.portsmouthfringe.com/
   - Portsmouth
   - End July / start August
   - Application: ?
@@ -76,10 +94,22 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Early August
   - Application: ?
 
+- Purbeck Folk Festival
+  - https://www.purbeckvalleyfolkfestival.co.uk/
+  - Wareham / Bournemouth
+  - Mid-August
+  - Application: ?
+
 - Petworth Fringe
   - https://www.petfringe.co.uk/
   - West Sussex
   - Mid-Late September?
+  - Application: ?
+
+- Swanage Folk Festival
+  - https://swanagefolkfestival.com/
+  - Swanage
+  - Early September
   - Application: ?
 
 - Faversham Fringe
