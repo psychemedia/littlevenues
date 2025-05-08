@@ -118,3 +118,9 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - October
   - Application: May-June
  
+
+## Small music festivals
+
+- Grass Roots Grazin
+  - https://www.themusicbaa.co.uk/whatson
+  - Salisbury
