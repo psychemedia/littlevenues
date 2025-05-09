@@ -60,6 +60,8 @@ MARCH 1ST AUSTELL Arts Centre
 
 ## Gaz Brookfield:
 
+![image](https://github.com/user-attachments/assets/fea4abdd-ae6d-42f0-9fd2-8cfd030289d1)
+
 ![image](https://github.com/user-attachments/assets/a3f2c668-d3a4-47b0-a0fe-f15940d55ff5)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/db87cece-65a8-46f6-821e-c91358d2f349)
