@@ -21,6 +21,7 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Chichester
   - Early June
   - Application: December?/January?
+  - Local press: https://www.theargus.co.uk/local-news/chichester-news/
 
 - Wimborne Minster Folk Festival
   - https://www.wmff.co.uk/
