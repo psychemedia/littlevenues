@@ -181,6 +181,8 @@ Bristol, Fleece
 
 ## Jess Silk
 
+![image](https://github.com/user-attachments/assets/447cb651-2c0f-4fb0-bc81-a6eceab34f58)
+
 ![image](https://github.com/user-attachments/assets/69e433bd-7431-41d5-add1-9dccf31dfc15)
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/a0905285-0f9b-4c54-a2ed-620e796acf13)
