@@ -20,10 +20,6 @@ https://www.felinwales.org/storytellings
 Round-up of roundhouses  
 http://www.theroundhouse.org/resources/otherhousesengland.htm
 
-
-## Builds...
-
-
 ## Builds?!
 
 - https://www.qorone.com/the-magic-teapot
