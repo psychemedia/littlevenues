@@ -19,3 +19,15 @@ https://www.felinwales.org/storytellings
 
 Round-up of roundhouses  
 http://www.theroundhouse.org/resources/otherhousesengland.htm
+
+
+## Builds...
+
+
+## Builds?!
+
+- https://www.qorone.com/the-magic-teapot
+- https://www.theroundhousecompany.co.uk/roundhouses
+- https://ancienttechnologycentre.com/round-house-builds
+
+![image](https://github.com/user-attachments/assets/3896024e-0391-42d0-87be-ab1b95a125a5)
