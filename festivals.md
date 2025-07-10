@@ -16,6 +16,11 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Late May
   - Application: DIY / https://www.bathfringe.co.uk/putting-a-show-into-bath-fringe/
 
+- Stony Stratford, Fringe / Fringe Too
+  - June
+  - Flyer 2025: https://github.com/user-attachments/assets/cc5f60d6-8662-478f-a223-5b463e20caa3
+  - application - Lynette?
+
 - Chichester Fringe
   - https://www.chichesterfringe.co.uk/
   - Chichester
