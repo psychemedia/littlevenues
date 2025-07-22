@@ -106,6 +106,12 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Mid-August
   - Application: ?
 
+- Wigan Diggers' Festival
+  - https://wigandiggersfestival.org/
+  - Wigan, Lancashire
+  - Mid-September
+  - Application: mid/late September (Facebook?)
+
 - Petworth Fringe
   - https://www.petfringe.co.uk/
   - West Sussex
