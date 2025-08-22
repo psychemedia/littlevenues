@@ -21,7 +21,7 @@ Round-up of roundhouses
 http://www.theroundhouse.org/resources/otherhousesengland.htm
 
 
-## Other Insteresting Venues
+## Other Interesting Venues
 
 Square Tower, Portsmouth (80-100): https://www.squaretower.co.uk/copy-of-rooms
 https://www.squarerootspromotions.co.uk/ / ken@squarerootspromotions.co.uk
