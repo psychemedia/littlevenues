@@ -191,6 +191,8 @@ Bristol, Fleece
 
 ## Beans on Toast
 
+<img width="1080" height="1343" alt="image" src="https://github.com/user-attachments/assets/02845669-6f87-4aeb-ab55-88756145b7da" />
+
 ![image](https://github.com/user-attachments/assets/151b1807-771c-44cc-82f7-4a996f65fb6d)
 
 ![image](https://github.com/user-attachments/assets/cf29e39e-8e4d-44c4-afd5-378b31d9a1be)
