@@ -16,7 +16,13 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Brighton
   - May
   - Application: DIY
- 
+
+- Haslemere Frstival
+  - https://haslemerefestival.org.uk/
+  - Haslemere
+  - Mid-May
+  - ??
+
 - Bath Fringe
   - https://www.bathfringe.co.uk/
   - Bath
@@ -52,6 +58,11 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Portsmouth
   - Late June
   - Application: ?
+
+- Grass Roots Grazin' (music baa)
+  - https://www.tickettailor.com/events/themusicbaa/1855716
+  - Wiltshire
+  - Late June
 
 - Barnstaple Fringe / TheatreFest
   - https://www.theatrefest.co.uk/program/shows
