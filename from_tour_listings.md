@@ -183,6 +183,10 @@ Bristol, Fleece
 
 ## Jess Silk
 
+<img width="1132" height="1600" alt="image" src="https://github.com/user-attachments/assets/5a8265f3-1479-4ffb-82c9-d76881e49887" />
+
+<img width="1448" height="2048" alt="image" src="https://github.com/user-attachments/assets/e018191b-b236-4e3d-9300-14884154eaae" />
+
 ![image](https://github.com/user-attachments/assets/447cb651-2c0f-4fb0-bc81-a6eceab34f58)
 
 ![image](https://github.com/user-attachments/assets/69e433bd-7431-41d5-add1-9dccf31dfc15)
