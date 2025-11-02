@@ -111,6 +111,12 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Portsmouth
   - End July / start August
   - Application: ?
+ 
+- Trowbridge Festival
+  - http://trowbridgefestival.co.uk/
+  - Wiltshire
+  - End July
+  - artists@trowbridgefestival.co.uk
   
 - Sidmouth Folk Festival
   - https://sidmouthfolkfestival.co.uk/
