@@ -21,13 +21,18 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Ealry/Mid-May
   - Application: ?September
 
+- Whitchurch Folk Festival
+  - https://whitchurchfolk.com/
+  - Early-May
+  - Application: ?
+
 - Brighton Fringe
   - https://www.brightonfringe.org/
   - Brighton
   - May
   - Application: DIY
 
-- Haslemere Frstival
+- Haslemere Festival
   - https://haslemerefestival.org.uk/
   - Haslemere
   - Mid-May
