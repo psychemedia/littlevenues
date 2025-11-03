@@ -43,7 +43,7 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
 
 - Wimborne Minster Folk Festival
   - https://www.wmff.co.uk/
-  - Wimoborne Minster, Dorset
+  - Wimborne Minster, Dorset
   - Early June
   - Application: ?
 
