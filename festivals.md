@@ -145,6 +145,12 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Mid-August
   - Application: ?
 
+- Underneath the Stars (Kate Rusby)
+  - https://www.underneaththestarsfest.co.uk/
+  - Cawthorne, Yorskhire
+  - Mid August?
+  - Application: ?
+
 - Faversham Hop Festival
   - https://www.favershamhopfestival.org/
   - Faversham, Kent
@@ -156,6 +162,11 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Wigan, Lancashire
   - Mid-September
   - Application: mid/late September (Facebook?)
+
+- SouthDown Music Festival
+  - https://southdownsfolkfest.co.uk/
+  - Mid Sept?
+  - Application: ?
 
 - Petworth Fringe
   - https://www.petfringe.co.uk/
