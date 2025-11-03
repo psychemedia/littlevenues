@@ -11,6 +11,11 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - February
   - Application: ?
  
+- Todmorden Folk Festival
+  - https://todfolkfest.co.uk/
+  - early May
+  - Application: ?
+ 
 - Brighton Fringe
   - https://www.brightonfringe.org/
   - Brighton
