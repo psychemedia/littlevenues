@@ -19,7 +19,7 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
 - Holmfirth Folk Festival
   - https://www.holmfirthfestivaloffolk.co.uk/
   - Ealry/Mid-May
-  - Application: ?
+  - Application: ?September
 
 - Brighton Fringe
   - https://www.brightonfringe.org/
