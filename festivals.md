@@ -130,6 +130,12 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Mid-August
   - Application: ?
 
+- Faversham Hop Festival
+  - https://www.favershamhopfestival.org/
+  - Faversham, Kent
+  - Early September
+  - Application: ?
+
 - Wigan Diggers' Festival
   - https://wigandiggersfestival.org/
   - Wigan, Lancashire
