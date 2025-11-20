@@ -195,6 +195,10 @@ Bristol, Fleece
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/686853f4-394f-4b5e-8b8f-69d2e21ed2bb)
 
+## Three Daft Monkeys
+
+<img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/8e55be0d-7be0-4df4-9770-34a58428168c" />
+
 ## Beans on Toast
 
 <img width="1080" height="1343" alt="image" src="https://github.com/user-attachments/assets/02845669-6f87-4aeb-ab55-88756145b7da" />
