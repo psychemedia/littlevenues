@@ -232,6 +232,8 @@ Bristol, Fleece
 
 ## Tony Wright
 
+<img width="1440" height="1440" alt="image" src="https://github.com/user-attachments/assets/34ab4a33-f9a0-48b4-9026-29a155223e0c" />
+
 <img width="1080" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b67d52c-8dba-47ef-af95-6ff110cf66ce" />
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/43293d13-3693-4cd3-bf08-36d04ec86a54)
