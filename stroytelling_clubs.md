@@ -1,5 +1,7 @@
 # Storytelling Clubs
 
+DELETE THIS PAGE
+
 Via Peter Giles, https://www.facebook.com/groups/14430125460/user/100000222663416/
 
 Sheffield Story Forge..3rd  tuesday
