@@ -1,4 +1,4 @@
-# Stroyclubs and venues
+# Storyclubs and venues
 
 
 - Guesthouse Storytellers
