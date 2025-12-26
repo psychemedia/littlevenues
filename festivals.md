@@ -4,6 +4,14 @@
 ??
 Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunteer/
 
+https://festivalcalendar.uk/
+
+
+- InCider festival
+  - https://www.fuelledbycider.com/in-cider
+  - Weston-super-Mare
+  - early February
+ 
 
 - Forest of Dean Fringe
   - https://www.fodfringe.co.uk/
@@ -109,12 +117,29 @@ Between the Trees Festival, Wales, August, https://betweenthetrees.co.uk/volunte
   - Mid July
   - Application: September-November
 
+
+- Godney Gathering
+  - https://thegodneygathering.com/
+  - Mid-July
+  - Somerset
+  - Application: August / September https://www.facebook.com/groups/TheGodneyGatheringGlastonbury
+ 
 - Ventnor Fringe
   - https://vfringe.co.uk/takepart/
   - Isle of Wight
   - Late July
   - Application: November-March
 
+- Wickham Festival
+  - https://www.wickhamfestival.co.uk/
+  - late July / early August
+  - Fareham
+
+- OutCider Festival
+  - https://www.fuelledbycider.com/outcider
+  - late July / early August
+  - Bristol
+  
 - Warwick Folk Festival and Fringe
   - https://warwickfolkfestival.co.uk/
   - Warwick
