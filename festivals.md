@@ -26,7 +26,7 @@ https://festivalcalendar.uk/
 
 - Holmfirth Folk Festival
   - https://www.holmfirthfestivaloffolk.co.uk/
-  - Ealry/Mid-May
+  - Early/Mid-May
   - Application: ?September
 
 - Whitchurch Folk Festival
@@ -51,6 +51,11 @@ https://festivalcalendar.uk/
   - Bath
   - Late May
   - Application: DIY / https://www.bathfringe.co.uk/putting-a-show-into-bath-fringe/
+
+- Great Estate Festival
+  - https://www.greatestatefestival.co.uk/happenings/
+  - Redruth, Cornwall
+  - Late May
 
 - Stony Stratford, StonyLive Fringe / Fringe Too
   - June
@@ -93,6 +98,12 @@ https://festivalcalendar.uk/
   - Late June
   - Application: ?
 
+
+- Paradhis Festival
+  - First weekend July
+  - Cornwall
+  - https://paradhis.co.uk/
+
 - Watford Fringe
   - https://watfringe.co.uk
   - Watford
@@ -111,12 +122,16 @@ https://festivalcalendar.uk/
   - Early-late July
   - Application: DIY / December
 
+- 2000 trees
+  - 2nd weekend July
+  - Cheltenham 
+  - https://2000trees.co.uk/tickets
+
 - Tolpuddle Martyrs Festival
   - https://www.tolpuddlemartyrs.org.uk/festival/taking-part/performing-at-tolpuddle 
   - Tolpuddle
   - Mid July
   - Application: September-November
-
 
 - Godney Gathering
   - https://thegodneygathering.com/
@@ -170,6 +185,11 @@ https://festivalcalendar.uk/
   - Mid-August
   - Application: ?
 
+- Jurassic Fields
+  - Bridport
+  - Early/mid August
+  - https://jurassicfieldsfestival.com/
+
 - Underneath the Stars (Kate Rusby)
   - https://www.underneaththestarsfest.co.uk/
   - Cawthorne, Yorskhire
@@ -199,11 +219,21 @@ https://festivalcalendar.uk/
   - Mid-Late September?
   - Application: ?
 
+- End of the Road festival
+  - Sailisbury 
+  - first weekend Spetember
+  - https://endoftheroadfestival.com/
+  - 
 - Swanage Folk Festival
   - https://swanagefolkfestival.com/
   - Swanage
   - Early September
   - Application: ?
+
+- Cornwall Cider Festival
+  - Second weekend September
+  -  Penhallow, Cornwall
+  -  https://www.cornwallciderfestival.co.uk/
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
@@ -212,8 +242,22 @@ https://festivalcalendar.uk/
   - Application: May-June
  
 
-## Small music festivals
+## Small big festivals
+
+- Blue Reef Festival (Kent)
+  - Last weeked July
+  - https://www.bluereeffestival.co.uk/
 
 - Grass Roots Grazin
   - https://www.themusicbaa.co.uk/whatson
   - Salisbury
+
+- Into the Wild
+  - Last weekend August
+  - https://www.intothewildgathering.com/
+
+## Local Music Festivals
+
+- Gosport Sunset Festival
+  - last weekend August
+  - https://gosportsunsetfestival.co.uk/
