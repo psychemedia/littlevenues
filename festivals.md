@@ -34,6 +34,11 @@ https://festivalcalendar.uk/
   - Early-May
   - Application: ?
 
+- Ey Up Mi Duck
+  - https://www.wrootrocks.com/
+  - Doncaster
+  - Early May
+  
 - Brighton Fringe
   - https://www.brightonfringe.org/
   - Brighton
@@ -230,6 +235,11 @@ https://festivalcalendar.uk/
   - Early September
   - Application: ?
 
+- Off The Tracks Festival
+  - https://www.offthetracks.co.uk/
+  - Castle Donington
+  - Early September
+ 
 - Cornwall Cider Festival
   - Second weekend September
   -  Penhallow, Cornwall
