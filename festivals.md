@@ -190,6 +190,11 @@ https://festivalcalendar.uk/
   - Mid-August
   - Application: ?
 
+- Lakefest
+ - Eastnor Castle
+ - https://www.lakefest.co.uk/
+ - Early August
+
 - Jurassic Fields
   - Bridport
   - Early/mid August
@@ -242,8 +247,13 @@ https://festivalcalendar.uk/
  
 - Cornwall Cider Festival
   - Second weekend September
-  -  Penhallow, Cornwall
-  -  https://www.cornwallciderfestival.co.uk/
+  - Penhallow, Cornwall
+  - https://www.cornwallciderfestival.co.uk/
+
+- Wrootstock
+ - https://www.wrootrocks.com/
+ - Doncaster
+ - Early October
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
