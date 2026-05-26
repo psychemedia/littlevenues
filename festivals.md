@@ -191,7 +191,12 @@ https://festivalcalendar.uk/
   - https://www.fuelledbycider.com/outcider
   - late July / early August
   - Bristol
-  
+
+- Poole harbour Festival
+  - https://pooleharbourfestival.com/
+  - Poole
+  - Late July/early August
+
 - Warwick Folk Festival and Fringe
   - https://warwickfolkfestival.co.uk/
   - Warwick
