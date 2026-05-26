@@ -45,6 +45,11 @@ https://festivalcalendar.uk/
   - May
   - Application: DIY
 
+- Sidmouth Sea Fest
+  - https://sidmouthcoastalcommunityhub.org/sidmouth-sea-fest/
+  - Sidmouth
+  - Mid-May
+
 - Haslemere Festival
   - https://haslemerefestival.org.uk/
   - Haslemere
