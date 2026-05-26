@@ -57,6 +57,17 @@ https://festivalcalendar.uk/
   - Late May
   - Application: DIY / https://www.bathfringe.co.uk/putting-a-show-into-bath-fringe/
 
+- Bearded Theory ( + Something Else Tea Tent, Magic Teapot)
+  - https://beardedtheory.co.uk/
+  - Tamworth
+  - Late May
+
+- Cursus Festival (Fuelled By Cider)
+  - https://www.fuelledbycider.com/cursus
+  - Dorset
+  - https://www.facebook.com/cursusfestival
+  - Late May
+
 - Great Estate Festival
   - https://www.greatestatefestival.co.uk/happenings/
   - Redruth, Cornwall
