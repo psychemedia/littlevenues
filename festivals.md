@@ -90,6 +90,12 @@ https://festivalcalendar.uk/
   - Application: December?/January?
   - Local press: https://www.theargus.co.uk/local-news/chichester-news/
 
+
+- Here For the Music
+  - https://www.facebook.com/hereforthemusicfestival
+  - Mid-June
+  - Bideford
+ 
 - Wimborne Minster Folk Festival
   - https://www.wmff.co.uk/
   - Wimborne Minster, Dorset
@@ -143,6 +149,11 @@ https://festivalcalendar.uk/
   - Early-late July
   - Application: DIY / December
 
+- Outlaw Folk Festival (Big Sheep)
+  - https://thebigsheep.co.uk/outlaw-folk-festival/
+  - Bideford, Devon
+  - Mid-July
+  
 - 2000 trees
   - 2nd weekend July
   - Cheltenham 
