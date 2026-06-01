@@ -73,6 +73,11 @@ https://festivalcalendar.uk/
   - https://www.facebook.com/cursusfestival
   - Late May
 
+- Devauden Festival
+  - https://www.devaudenfestival.com/
+  - Monmouthshire
+  - Late May
+ 
 - Great Estate Festival
   - https://www.greatestatefestival.co.uk/happenings/
   - Redruth, Cornwall
