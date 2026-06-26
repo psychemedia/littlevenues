@@ -142,6 +142,10 @@ https://festivalcalendar.uk/
   - July
   - Application: January
 
+- Mansfield Folk Festival
+  - https://www.facebook.com/profile.php?id=61572385804952
+  - early July
+  
 - Tunbrdge Wells Fringe
   - https://twfringe.com/
   - Kent
