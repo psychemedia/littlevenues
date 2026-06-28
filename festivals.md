@@ -237,9 +237,9 @@ https://festivalcalendar.uk/
   - Application: ?
 
 - Lakefest
- - Eastnor Castle
- - https://www.lakefest.co.uk/
- - Early August
+  - Eastnor Castle
+  - https://www.lakefest.co.uk/
+  - Early August
 
 - Jurassic Fields
   - Bridport
