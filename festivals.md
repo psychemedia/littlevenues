@@ -136,6 +136,11 @@ https://festivalcalendar.uk/
   - Cornwall
   - https://paradhis.co.uk/
 
+- Folk in a Field
+  - Norfolk
+  - Early July
+  - https://www.folkinafield.co.uk/
+ 
 - Watford Fringe
   - https://watfringe.co.uk
   - Watford
