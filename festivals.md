@@ -257,6 +257,12 @@ https://festivalcalendar.uk/
   - Mid August?
   - Application: ?
 
+- Victorious Festival
+  - Portsmouth / Southsea
+  - "Spoken Arts Parlour"
+  - late August
+  - https://www.victoriousfestival.co.uk/
+
 - Faversham Hop Festival
   - https://www.favershamhopfestival.org/
   - Faversham, Kent
@@ -282,7 +288,7 @@ https://festivalcalendar.uk/
 
 - End of the Road festival
   - Sailisbury 
-  - first weekend Spetember
+  - first weekend September
   - https://endoftheroadfestival.com/
   - 
 - Swanage Folk Festival
