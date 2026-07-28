@@ -236,6 +236,7 @@ https://festivalcalendar.uk/
   - Devon
   - Early August
   - Application: ?
+  - Storytelling often in Manor Pavilion Theatre
 
 - Purbeck Folk Festival
   - https://www.purbeckvalleyfolkfestival.co.uk/
