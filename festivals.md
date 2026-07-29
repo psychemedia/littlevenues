@@ -321,6 +321,13 @@ https://festivalcalendar.uk/
   - October
   - Application: May-June
  
+- FFS Fest
+  - Winchester Railway Inn
+  - https://ffsfest.com/
+  - FB/I: @ffsfest
+  - Early November
+  - Calls early July, info@dividedbymittens.com
+ 
 
 ## Small big festivals
 
