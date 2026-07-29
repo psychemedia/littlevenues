@@ -266,6 +266,7 @@ https://festivalcalendar.uk/
   - "Spoken Arts Parlour"
   - late August
   - https://www.victoriousfestival.co.uk/
+  - applications February?
 
 - Faversham Hop Festival
   - https://www.favershamhopfestival.org/
