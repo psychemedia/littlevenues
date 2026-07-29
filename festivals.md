@@ -95,7 +95,6 @@ https://festivalcalendar.uk/
   - Application: December?/January?
   - Local press: https://www.theargus.co.uk/local-news/chichester-news/
 
-
 - Here For the Music
   - https://www.facebook.com/hereforthemusicfestival
   - Mid-June
@@ -130,7 +129,6 @@ https://festivalcalendar.uk/
   - Late June
   - Application: ?
 
-
 - Paradhis Festival
   - First weekend July
   - Cornwall
@@ -151,7 +149,7 @@ https://festivalcalendar.uk/
   - https://www.facebook.com/profile.php?id=61572385804952
   - early July
   
-- Tunbrdge Wells Fringe
+- Tunbridge Wells Fringe
   - https://twfringe.com/
   - Kent
   - Early July
