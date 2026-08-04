@@ -7,6 +7,8 @@ First up, what sorts of venues are there?
 
 ## Attila the Stockbroker
 
+<img width="1273" height="1591" alt="image" src="https://github.com/user-attachments/assets/d13dc609-5bf9-4526-9bdc-6c2742457355" />
+
 ![image](https://github.com/user-attachments/assets/9a5afaaa-1f93-4e59-ae17-0d1b4ce97da7)
 
 
