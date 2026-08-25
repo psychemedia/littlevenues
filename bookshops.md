@@ -20,7 +20,7 @@ Kemptown Bookshop, Brighton https://www.kemptownbookshop.co.uk/room-hire/
 
 East Grinstead Bookshop, https://www.eastgrinsteadbookshop.co.uk/events-2
 
-Seveoaks Bookshop, Sevenoaks, https://sevenoaksbookshop.co.uk/events/
+Sevenoaks Bookshop, Sevenoaks, https://sevenoaksbookshop.co.uk/events/
 
 ## Going to the right and up...
 
@@ -64,7 +64,7 @@ Alliance of radical booksellers https://www.radicalbooksellers.co.uk/
 - La Biblioteka https://labiblioteka.co/ Sheffield
 - October Books https://octoberbooks.org/pages/events info@octoberbooks.org
 - Rubicund https://www.rubicund.co.uk/ Falmouth
-- Fokestone Bookshop https://www.thefolkestonebookshop.co.uk/ Folkestone
+- Folkestone Bookshop https://www.thefolkestonebookshop.co.uk/ Folkestone
 - People's Bookshop https://www.facebook.com/PeoplesBookshop Durham
 
 ## Bookshop Band
