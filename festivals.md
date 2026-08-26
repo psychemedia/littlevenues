@@ -285,6 +285,10 @@ https://festivalcalendar.uk/
   - Mid-September
   - Application: mid/late September (Facebook?)
 
+- September Shindig, Truro
+  - https://thearboristcafe.co.uk/
+  - Early-September
+
 - SouthDown Music Festival
   - https://southdownsfolkfest.co.uk/
   - Mid Sept?
@@ -315,16 +319,21 @@ https://festivalcalendar.uk/
 - South Downs Music Festival
   - https://southdownsfolkfest.co.uk/ https://www.facebook.com/SouthdownsFolkFestival/#
   - Mid-September 
- 
+
 - Cornwall Cider Festival
   - Second weekend September
   - Penhallow, Cornwall
   - https://www.cornwallciderfestival.co.uk/
 
 - Wrootstock
- - https://www.wrootrocks.com/
- - Doncaster
- - Early October
+  - https://www.wrootrocks.com/
+  - Doncaster
+  - Early October
+
+- Deepdale Festival
+  - https://deepdalecamping.co.uk/festival/
+  - End September
+  - Norfolk
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
