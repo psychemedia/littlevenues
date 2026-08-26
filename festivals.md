@@ -180,6 +180,11 @@ https://festivalcalendar.uk/
   - Mid July
   - Application: September-November
 
+- New Forest Folk Festival
+  - https://www.newforestfolkfestival.co.uk/
+  - 2nd week July (7 - 11 July 2027)
+  - nick@newforestfolkfestival.co.uk
+
 - Godney Gathering
   - https://thegodneygathering.com/
   - Mid-July
@@ -306,6 +311,10 @@ https://festivalcalendar.uk/
   - https://www.offthetracks.co.uk/
   - Castle Donington
   - Early September
+
+- South Downs Music Festival
+  - https://southdownsfolkfest.co.uk/ https://www.facebook.com/SouthdownsFolkFestival/#
+  - Mid-September 
  
 - Cornwall Cider Festival
   - Second weekend September
