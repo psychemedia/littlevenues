@@ -347,7 +347,16 @@ https://festivalcalendar.uk/
   - FB/I: @ffsfest
   - Early November
   - Calls early July, info@dividedbymittens.com
+
+- Invention Dery
+  - mid-September
+  - https://inventionderby.co.uk/about/
  
+- Dimpseyfest
+  - Chard, Somerset
+  - Mid Sept
+  - coppermeltpromotions@gmail.com
+  - https://www.facebook.com/people/DimpseyFest/100095383069091/ 
 
 ## Small big festivals
 
