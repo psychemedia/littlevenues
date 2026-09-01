@@ -348,7 +348,8 @@ https://festivalcalendar.uk/
   - Early November
   - Calls early July, info@dividedbymittens.com
 
-- Invention Dery
+- Invention
+  - Derby
   - mid-September
   - https://inventionderby.co.uk/about/
  
