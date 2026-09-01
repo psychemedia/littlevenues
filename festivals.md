@@ -266,6 +266,11 @@ https://festivalcalendar.uk/
   - Mid August?
   - Application: ?
 
+- Minehead Bay festival
+  - Late August
+  - Minehead Bay
+  - https://mineheadbayfestival.co.uk/
+
 - Victorious Festival
   - Portsmouth / Southsea
   - "Spoken Arts Parlour"
@@ -358,6 +363,16 @@ https://festivalcalendar.uk/
   - Mid Sept
   - coppermeltpromotions@gmail.com
   - https://www.facebook.com/people/DimpseyFest/100095383069091/ 
+
+- Days in the Sun
+  - mid Sept
+  - https://www.daysinthesunfestival.com/
+  - Rudford, Gloucestershire 
+
+- Ragged Bear
+  - Nuneaton 
+  - https://www.raggedbear.com/
+  - Late October
 
 ## Small big festivals
 
