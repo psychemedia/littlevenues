@@ -20,9 +20,7 @@ let currentIndependentStage = null; // { key, record }
  * badge labels.
  */
 function humanizeSlug(slug) {
-  return slug
-    .replace(/[-_]+/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+  return slug.replace(/[-_]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 /**
@@ -182,6 +180,7 @@ function loadSelectedIndependentStage() {
 function buildIndependentStageCard(id, stage) {
   const card = document.createElement("div");
   card.className = "stage-overview-card";
+  card.id = `stage-card-${id}`;
   card.style.cursor = "pointer";
 
   const name = document.createElement("div");
@@ -191,12 +190,14 @@ function buildIndependentStageCard(id, stage) {
 
   const types = getStageTypes(stage);
   if (types.length) {
-    const typeRow = document.createElement("div");
-    typeRow.className = "stage-card-types";
-    types.forEach((t) =>
-      typeRow.appendChild(makeBadge("badge-stage-type", humanizeSlug(t))),
-    );
-    card.appendChild(typeRow);
+    //const typeRow = document.createElement("div");
+    //typeRow.className = "stage-card-types";
+    //types.forEach((t) =>
+    //  typeRow.appendChild(makeBadge("badge-stage-type", humanizeSlug(t))),
+    //);
+    addIndependentStageBadges(stage, card);
+    //card.appendChild(typeRow);
+    
   }
 
   if (stage.description) {
@@ -211,12 +212,13 @@ function buildIndependentStageCard(id, stage) {
   }
 
   const festivalCount = (stage.festivals || []).length;
+
   if (festivalCount) {
     const counts = document.createElement("div");
     counts.className = "stage-card-counts";
     const badge = document.createElement("span");
     badge.className = "stage-card-badge";
-    badge.textContent = `🎪 ${festivalCount} festival${festivalCount !== 1 ? "s" : ""}`;
+    badge.textContent = `${festivalCount} festival${festivalCount !== 1 ? "s" : ""}`;
     counts.appendChild(badge);
     card.appendChild(counts);
   }
@@ -287,28 +289,31 @@ function buildEmptyNote(text) {
  * space. Only flags explicitly present in the record are shown — an absent
  * boolean means "not recorded", not "no".
  */
-function renderIndependentStageBadges(stage) {
-  const container = document.getElementById("independentStageBadges");
-  container.innerHTML = "";
-
+function addIndependentStageBadges(stage, container) {
   getStageTypes(stage).forEach((t) =>
     container.appendChild(makeBadge("badge-stage-type", humanizeSlug(t))),
   );
 
   if (stage.popUp === true) {
-    container.appendChild(makeBadge("badge-stage-flag", "⛺ Pop-up"));
+    container.appendChild(makeBadge("badge-stage-popup", "Pop-up"));
   }
   if (stage.prebooked === true) {
-    container.appendChild(makeBadge("badge-stage-flag", "📋 Pre-booked"));
-  } else if (stage.prebooked === false) {
-    container.appendChild(makeBadge("badge-stage-walkup", "🚶 Walk-up"));
+    container.appendChild(makeBadge("badge-stage-prebooked", "Pre-booked"));
   }
+
   if (stage.open_mic === true) {
-    container.appendChild(makeBadge("badge-stage-flag", "🎙️ Open mic"));
+    container.appendChild(makeBadge("badge-stage-openmic", "Open mic"));
   }
   if (stage.session === true) {
-    container.appendChild(makeBadge("badge-stage-flag", "🎻 Session"));
+    container.appendChild(makeBadge("badge-stage-session", "Session"));
   }
+}
+
+function renderIndependentStageBadges(stage, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+
+  addIndependentStageBadges(stage, container);
 
   container.style.display = container.hasChildNodes() ? "flex" : "none";
 }
@@ -405,8 +410,7 @@ function displayIndependentStage(independentStageId) {
   const stage = independentStagesLookup[independentStageId];
   if (!stage) {
     document.getElementById("independentStageContent").style.display = "none";
-    document.getElementById("independentStageNotFound").style.display =
-      "block";
+    document.getElementById("independentStageNotFound").style.display = "block";
     return;
   }
 
@@ -431,7 +435,7 @@ function displayIndependentStage(independentStageId) {
     subtitleEl.style.display = "none";
   }
 
-  renderIndependentStageBadges(stage);
+  renderIndependentStageBadges(stage, "independentStageBadges");
   renderIndependentStageMeta(stage);
   renderIndependentStageLinks(stage);
   renderIndependentStagePromoter(stage);

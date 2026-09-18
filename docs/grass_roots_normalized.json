@@ -88,6 +88,7 @@
             "url": "https://convoycabaret.uk/",
             "facebook": "https://www.facebook.com/convoycabaret/",
             "type": "stage",
+            "prebooked": true,
             "festivals": [
                 "bearded-theory"
             ]
@@ -95,6 +96,7 @@
         "rebel-tent": {
             "name": "Rebel Tent",
             "type": "stage",
+            "prebooked": true,
             "festivals": [
                 "beautiful-days"
             ]
@@ -114,12 +116,14 @@
             "type": "stage",
             "open_mic": true,
             "popUp": false,
+            "prebooked": true,
             "festivals": [
                 "bearded-theory"
             ]
         },
         "tiny-tea-tent": {
             "name": "Tiny Tea Tent",
+            "type": "tea-tent",
             "prebooked": false,
             "open_mic": false,
             "popUp": true,
@@ -160,6 +164,24 @@
                 "tiny-tea-tent"
             ],
             "runnings": {
+                "beautiful-days-2026": {
+                    "year": 2026,
+                    "dates": {
+                        "start": "21/08/2026",
+                        "end": "23/08/2026",
+                        "early": "20/08/2026"
+                    },
+                    "schedule": [
+                        {
+                            "date": "21/08/2026",
+                            "time": "18:00-18:40",
+                            "stage": "rebel-tent",
+                            "name": "Protest Days, Rebellion Nights: Tales of the Luddite Times",
+                            "type": "storytelling",
+                            "performer_id": "monty-storyteller"
+                        }
+                    ]
+                },
                 "beautiful-days-2027": {
                     "year": 2027,
                     "dates": {
@@ -170,7 +192,7 @@
                 }
             }
         },
-        "wickham_festival": {
+        "wickham-festival": {
             "name": "Wickham Festival",
             "url": "https://www.wickhamfestival.co.uk/",
             "independent_stages": [
@@ -191,7 +213,15 @@
         "trowbridge-festival": {
             "name": "Trowbridge Festival",
             "promoter_id": "trowbridge_pump",
-            "url": "https://www.trowbridgefestival.co.uk/"
+            "url": "https://www.trowbridgefestival.co.uk/",
+            "runnings": {
+                "trowbridge_festival_2026": {
+                    "dates": {
+                        "start_date": "24/07/2026",
+                        "end_date": "26/07/2026"
+                    }
+                }
+            }
         },
         "incider": {
             "name": "In Cider Festival",
@@ -244,7 +274,18 @@
         "mad-dog-mcrea-weekender": {
             "name": "Mad Dog Mcrea Weekender",
             "promoter_id": "fuelled_by_cider",
+            "url": "https://www.maddogmcrea.co.uk/mad-dog-mcrea-weekender",
             "runnings": {
+                "mad-dog-mcrea-weekender-2026": {
+                    "year": 2026,
+                    "event_url": "",
+                    "event_flyer": "2026_mad_dog_mcrea_weekender.jpg",
+                    "dates": {
+                        "start": "03/04/2026",
+                        "end": "04/04/2026",
+                        "early": ""
+                    }
+                },
                 "mad-dog-mcrea-weekender-2027": {
                     "year": 2027,
                     "event_url": "https://exeterphoenix.org.uk/events/mad-dog-mcrea-weekender/",
@@ -298,7 +339,11 @@
         },
         "foolhardy_folk_festival": {
             "name": "Foolhardy Folk Festival",
-            "runnings":{"foolhardy_folk_2026":{"date":"30/08/2026"}}
+            "runnings": {
+                "foolhardy_folk_2026": {
+                    "date": "30/08/2026"
+                }
+            }
         },
         "deepdale_festival": {
             "name": "Deepdale Festival",
@@ -330,7 +375,15 @@
         },
         "tolpuddle_martyrs_festival": {
             "name": "Tolpuddle Martyrs Festival",
-            "url": "https://www.tolpuddlemartyrs.org.uk/festival"
+            "url": "https://www.tolpuddlemartyrs.org.uk/festival",
+            "runnings": {
+                "tolpuddle_martyrs_2026": {
+                    "dates": {
+                        "start_date": "17/07/2026",
+                        "end_date": "19/07/2026"
+                    }
+                }
+            }
         },
         "poole_harbour_festival": {
             "name": "Poole Harbour Festival",
@@ -602,6 +655,12 @@
             "instagram": "",
             "musician": true,
             "bio": "Samantics is a livewire rap-poet and musician whose lyrical maps are a personal stroll around his vision of England and his own life. Taking us on a multitudinous odyssey of instrumentation - ukulele, piano, beats, bass, electronics and more - all created and controlled via a loop station and sampler. His live shows are a frantic, funny, and thrilling experience. Skirting the line between slam poet, social commentator and street busker, Samantics is an unmissable solo artist bound to spike your energy levels."
+        },
+        "monty-storyteller": {
+            "id": "monty-storyteller",
+            "name": "Monty Storyteller",
+            "url": "https://montystoryteller.org/",
+            "bio": "Isle of Wight based traditional storyteller, Tony 'Monty' Hirst, aka Monty Storyteller, has been a listener of tales for over thirty years and a teller for five. Coming up through the ranks of folk nights and open mics, he regularly performs his own shows, as well as telling pop up tales in teas tents at music festivals around the country."
         }
     }
 }

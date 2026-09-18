@@ -189,20 +189,29 @@
   border: 1px solid #b0bec5;
 }
 
-/* Booking-style flag badges (pop-up, pre-booked, open mic, session) —
-   share the green accent used for the "Festival" badge elsewhere. */
-.badge-stage-flag {
-  background: #e8f5e9;
-  color: var(--theme-green-dark);
-  border: 1px solid var(--theme-green-border);
+/* Booking-style flag badges (pop-up, pre-booked, open mic, session)  */
+.badge-stage-prebooked {
+  background: #eed7d7;
+  color: #524c4c;
+  border: 1px solid #fd9d9d;
 }
 
-/* Walk-up (prebooked: false) gets its own colour — a deliberately
-   different signal from "pre-booked", not just the same badge inverted. */
-.badge-stage-walkup {
+.badge-stage-openmic {
+  background: #f57f17;
+  color: #e8ded6;
+  border: 1px solid #f0931a;
+}
+
+.badge-stage-popup {
   background: #fff8e1;
   color: #f57f17;
   border: 1px solid #ffe082;
+}
+
+.badge-stage-session {
+  background: #6e5a19;
+  color: #ece9e6;
+  border: 1px solid #715a16c9;
 }
 
 .stage-booking-period {
