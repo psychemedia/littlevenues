@@ -997,7 +997,7 @@ function displayFestival(festivalId) {
   const linksEl = document.getElementById("festivalLinks");
   linksEl.innerHTML = "";
   [
-    { url: fest.website, label: "🌐 Festival Website", cls: "" },
+    { url: fest.url, label: "🌐 Festival Website", cls: "" },
     { url: fest.ticket_url, label: "🎟 Tickets", cls: "festival-ticket-link" },
     { url: fest.facebook, label: "📘 Facebook", cls: "" },
   ].forEach(({ url, label, cls }) => {

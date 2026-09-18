@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UK grassroots scene small independent promoters directory.">
+    <meta name="keywords"
+        content="grass roots music, independent promoters, promoters, promoting, promoter, small festival promoters, small festivals, independent festival promoter, independent festival promotion">
+    <title>Independent Promoters — Grass Roots Scene</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="shared-styles.css">
+    <link rel="stylesheet" href="promoters-styles.css">
+</head>
+
+<body class="page-promoters">
+
+<nav class="site-nav" aria-label="Site navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="promoters.html">Promoters</a>
+    <a href="small_festivals.html">Small Festivals</a>
+</nav>
+
+    <h1>Grass Roots Scene — Indpendent Promoters Directory</h1>
+    <h2>Directory of small, independent, grass roots music promoters and independent festival promoters.</h2>
+    <!-- ── Overview panels ─────────────────────────────────────────── -->
+
+<!-- ── Selector ────────────────────────────────────────────────── -->
+
+<div class="promoter-controls">
+    <div class="promoter-selector">
+        <label for="promoterSelect">Promoter:</label>
+        <select id="promoterSelect" onchange="handlePromoterSelectChange()">
+            <option value="">Select a promoter...</option>
+        </select>
+        <button onclick="loadSelectedPromoter()" class="btn-primary">Show Promoter</button>
+    </div>
+    <div class="share-container">
+        <button onclick="sharePromoterLink()" class="btn-secondary">🔗 Copy Shareable Link</button>
+        <button id="refreshDataBtn" onclick="refreshDirectoryData()" class="btn-secondary"
+            title="Bypasses the cache to fetch the latest directory data immediately">🔄 Refresh Data</button>
+    </div>
+</div>
+
+<!-- ── Not found ───────────────────────────────────────────────── -->
+<div id="promoterNotFound" style="display:none;" class="not-found-state">
+    <p>Promoter not found. <a href="promoters.html">View all festivals</a></p>
+</div>
+
+    </body></html>

@@ -1161,7 +1161,7 @@ function showNotFound() {
  * Append a social/contact icon link to a container element.
  * Does nothing if the URL is absent or fails sanitization.
  * @param {HTMLElement} container
- * @param {'website'|'email'|'facebook'} type
+ * @param {'url'|'email'|'facebook'} type
  * @param {string} url
  */
 function createIcon(container, type, url) {

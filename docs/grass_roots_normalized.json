@@ -130,46 +130,145 @@
     },
     "festivals": {
         "bearded-theory": {
+            "name": "Bearded Theory",
+            "url": "https://beardedtheory.co.uk/",
             "independent_stages": [
                 "maui-waui",
                 "convoy-cabaret",
                 "magic-teapot",
                 "knockerdown-inn",
                 "something-else"
-            ]
+            ],
+            "runnings": {
+                "bearded-theory-2027": {
+                    "year": 2027,
+                    "dates": {
+                        "start": "27/05/2027",
+                        "end": "30/05/2027",
+                        "early": "26/05/2027"
+                    }
+                }
+            },
+            "fire_pit": true
         },
         "beautiful-days": {
+            "name": "Beautiful Days",
+            "url": "https://www.beautifuldays.org/",
             "independent_stages": [
                 "magic-teapot",
                 "rebel-tent",
                 "tiny-tea-tent"
-            ]
+            ],
+            "runnings": {
+                "beautiful-days-2027": {
+                    "year": 2027,
+                    "dates": {
+                        "start": "20/08/2027",
+                        "end": "22/08/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "wickham_festival": {
+            "name": "Wickham Festival",
+            "url": "https://www.wickhamfestival.co.uk/",
             "independent_stages": [
                 "underground-overground-stage",
                 "magic-teapot"
-            ]
+            ],
+            "runnings": {
+                "incider-2027": {
+                    "year": 2027,
+                    "dates": {
+                        "start": "29/07/2027",
+                        "end": "01/08/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "trowbridge-festival": {
+            "name": "Trowbridge Festival",
             "promoter_id": "trowbridge_pump",
             "url": "https://www.trowbridgefestival.co.uk/"
         },
         "incider": {
-            "promoter_id": "fuelled_by_cider"
+            "name": "In Cider Festival",
+            "promoter_id": "fuelled_by_cider",
+            "description": "3 days of indoor festival fun at Sand Bay Holiday Village near Weston-super-Mare.\n\n\n\nTicket price includes chalet accommodation, meals, live music, entertainment and leisure facilities.\n\n\n\nAll you need to bring is a towel, a big smile and money for the bar!",
+            "event_url": "https://www.fuelledbycider.com/in-cider",
+            "runnings": {
+                "incider-2027": {
+                    "year": 2027,
+                    "dates": {
+                        "start": "05/02/2027",
+                        "end": "07/02/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "outcider": {
-            "promoter_id": "fuelled_by_cider"
+            "name": "OutCider Festival",
+            "description": "OutCider Festival is an old school, no nonsense weekend of fantastic live music, cider and madness in the Mendip hills just south of Bristol.\n\n\n\nNo tribute bands. No X-Factor. No Carling lager. No tossers!\n\n\n\nOutCider Festival features 35+ acts over two alternating, barn-covered stages. The mix of music is eclectic, energetic and definitely not anything mainstream. The camping field is lush and spacious and we welcome live-in vehicles.\n\n\n\nWe pride ourselves on a fun, inclusive atmosphere and many people return every year to be part of the big Fuelled By Cider family. We'd love to see you there too.",
+            "promoter_id": "fuelled_by_cider",
+            "runnings": {
+                "outcider-2027": {
+                    "year": 2027,
+                    "event_url": "https://www.fuelledbycider.com/outcider",
+                    "dates": {
+                        "start": "05/08/2027",
+                        "end": "08/08/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "cursus": {
-            "promoter_id": "fuelled_by_cider"
+            "name": "Cursus Festival",
+            "description": "A 3 day family-friendly festival bringing together good people, great music and delicious food and cider. Cursus prides itself on being a fun, inclusive and grassroots event - a place to chill and make new friends and great memories.\n\n\n\nFamilies, tent campers and live-in vehicles are all welcome. We are also a dog-friendly event!!!",
+            "promoter_id": "fuelled_by_cider",
+            "runnings": {
+                "cursus-2027": {
+                    "event_url": "https://www.fuelledbycider.com/cursus",
+                    "year": 2027,
+                    "dates": {
+                        "start": "28/05/2027",
+                        "end": "30/05/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "mad-dog-mcrea-weekender": {
-            "promoter_id": "fuelled_by_cider"
+            "name": "Mad Dog Mcrea Weekender",
+            "promoter_id": "fuelled_by_cider",
+            "runnings": {
+                "mad-dog-mcrea-weekender-2027": {
+                    "year": 2027,
+                    "event_url": "https://exeterphoenix.org.uk/events/mad-dog-mcrea-weekender/",
+                    "dates": {
+                        "start": "26/03/2027",
+                        "end": "27/03/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "grass_roots_grazin": {
             "name": "Grass Roots Grazin'",
-            "promoter_id": "the_music_baa"
+            "promoter_id": "the_music_baa",
+            "runnings": {
+                "incider-2027": {
+                    "year": 2027,
+                    "dates": {
+                        "start": "25/07/2027",
+                        "end": "27/07/2027",
+                        "early": ""
+                    }
+                }
+            }
         },
         "gig_in_a_field": {
             "name": "Gig In a Field",
@@ -217,26 +316,28 @@
                 }
             }
         },
-        "exeter-story-fix-2026": {
-            "name": "Exeter Story Fix 2026",
-            "short_name": "Storyfix 2026",
-            "start_date": "27/11/2026",
-            "end_date": "28/11/2026",
-            "primary_type": "storytelling",
-            "venue_id": "",
-            "ticket_url": "https://artemis-storytelling.co.uk/tickets",
-            "website": "https://artemis-storytelling.co.uk/storyfix",
+        "ffs-fest-2026": {
+            "name": "FFS Fest",
+            "event_name": "FFS Fest 2026",
+            "short_name": "",
+            "venue_id": "railway-inn-winchester",
+            "url": "https://ffsfest.com/",
+            "start_date": "13/11/2026",
+            "end_date": "15/11/2026",
+            "primary_type": "music",
+            "ticket_url": "https://railwayinn.pub/shows/ffs-fest-2026-11-14",
             "facebook": "",
             "description": "",
-            "event_flyers": [
-                "exeter_story_fix_2026_flyer.png",
-                "exeter_story_fix_2026a_flyer.png",
-                "exeter_story_fix_2026b_flyer.png/"
-            ],
+            "event_flyers": [],
             "performers": [
                 {
-                    "performer_id": "nick-hennessey",
-                    "role": ""
+                    "performer_id": "bassie-gracie"
+                },
+                {
+                    "performer_id": "jess-silk"
+                },
+                {
+                    "performer_id": "samantics"
                 }
             ],
             "performers_tbc": true,
@@ -309,5 +410,64 @@
         }
     },
     "events": [],
-    "locations": {}
+    "locations": {
+        "railway-inn-winchester": {
+            "id": "railway-inn-winchester",
+            "name": "Railway Inn, Winchester",
+            "city": "Winchester",
+            "postcode": "SO22 5AE",
+            "full_address": "Railway Inn, 3 St. Pauls Hill, Winchester, SO22 5AE",
+            "url": "https://railwayinn.pub/",
+            "latlon": [
+                51.06674,
+                -1.32225
+            ]
+        }
+    },
+    "performers": {
+        "gaz-brookfield": {
+            "id": "gaz-brookfield",
+            "name": "Gaz Brookfield",
+            "url": "https://gazbrookfield.com/",
+            "instagram": "gazbrookfield",
+            "facebook": "gazbrookfieldmusic",
+            "facebook_group": "1438746349768477",
+            "musician": true,
+            "bio": "West country based Gaz Brookfield is an award winning solo acoustic musician, with two number one albums to his name.\n\n\n\nHe has spent the last fifteen years tirelessly touring all over the UK and beyond, building a strong and loyal following wherever he goes.\n\n\n\nBrookfield was the first independent musician to sell out Bristol's The Fleece (450 cap) and The Bierkeller (750 cap) and more recently SWX (1000 cap).\n\n\n\nGaz has an impressive ten album strong back catalogue. In the autumn of 2023, Gaz's ninth album, 'Morning Walking Club', saw him achieve his first number one in the Official UK Folk Albums Chart.\n\n\n\nBrookfield got his second number one album in September 2025, when 'Waiting for Wisdom' topped the Official UK Download Charts.\n\n\n\nNot a bad result for this fiercely independent musician, with no record label, no manager, no agent - just a guitar, a van, and a steadfastly belligerent refusal to give in."
+        },
+        "bassie-gracie": {
+            "id": "bassie-gracie",
+            "name": "Bassie Gracie",
+            "poet": true,
+            "url": "https://www.facebook.com/bassiegracie",
+            "bio": "In her own words, \"'I'm Grace, I play the bass, people take photos of my face, I do poetry but I struggle with rhymes.\""
+        },
+        "nick-parker": {
+            "id": "nick-parker",
+            "name": "Nick Parker",
+            "url": "https://nick-parker.co.uk/",
+            "facebook": "nickparkertheperson",
+            "instagram": "nick_parker_music",
+            "musician": true,
+            "bio": "Glastonbury based Nick Parker started gigging in his early teens playing mandolin and singing in folk/rock/skiffle band 'Why?', and spent the next 10 years bouncing around on stages at hundreds of venues and festivals around the UK and Europe. In 2010 Nick embarked on a solo career and has since enjoyed over 30 tours around the UK and Europe, releasing five full-length albums along the way, many songs from which have been featured on BBC6 Music among many other radio stations.\n\n\n\nAlthough primarily a solo effort Nick often plays with his band 'Nick Parker and the False Alarms' which is a folky/rocky/country affair using guitars, fiddle, pedal steel, banjo, mandolin, cornet, accordion, keys, whistles, pipes, bass and drums, often with various members switching instruments when space permits. At a recent gig the band were described as 'A British Arcade Fire', something that Nick was very pleased about. Nick also often gigs as a duo with fiddle player Ben Wain."
+        }
+    },
+    "jess-silk": {
+        "id": "jess-silk",
+        "name": "Jess Silk",
+        "url": "https://jesssilk.co.uk/",
+        "facebook": "JessSilkMusic",
+        "instagram": "jess_silk",
+        "musician": true,
+        "bio": "Jess Silk is a guitarist, singer and songwriter from the Black Country. Her passionate and melodic brand of folk/punk music gets people sitting up and listening. Armed only with an increasingly sticker-covered acoustic guitar, lyrics right from the heart and a distinctive, powerful voice that many don't expect, Jess plays to audiences up and down the UK and has shared stages with many well known names among the folk/punk scene."
+    },
+    "samantics": {
+        "id": "samantics",
+        "name": "Samantics",
+        "url": "",
+        "facebook": "",
+        "instagram": "",
+        "musician": true,
+        "bio": ""
+    }
 }

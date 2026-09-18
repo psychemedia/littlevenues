@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UK grassroots scene small independent festival stages and festival tea tents directory.">
+    <meta name="keywords"
+        content="grass roots music, independent stages, small stages, tea tents, festival tea tents, small festivals, independent festivals, independent festival stage">
+    <title>Independent Stages and Festival Tea Tents — Grass Roots Scene</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="shared-styles.css">
+    <link rel="stylesheet" href="independent_stages-styles.css">
+</head>
+
+<body class="page-independent_stages">
+
+    <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">🏠 Home</a>
+        <a href="small_festivals.html">Small Festivals</a>
+        <a href="independent_stages.html">Independent Stages / Tea tents</a>
+        <a href="promoters.html">Promoters</a>
+    </nav>
+
+    <h1>Grass Roots Scene — Independent Stages and Festival Teat Tents Directory</h1>
+    <h2>Directory of small, independent, grass roots music festival stages and teas tents with stages and performance opportunities.</h2>
+    <!-- ── Overview panels ─────────────────────────────────────────── -->
+
+    <!-- ── Selector ────────────────────────────────────────────────── -->
+
+    <div class="indepentStages-controls">
+        <div class="indepentStages-selector">
+            <label for="indepentStagesSelect">Independent stages / tea tents:</label>
+            <select id="indepentStagesSelect" onchange="handleIndependentStagesSelectChange()">
+                <option value="">Select a promoter...</option>
+            </select>
+            <button onclick="loadSelectedIndependentStages()" class="btn-primary">Show Independent stage / tea tent</button>
+        </div>
+        <div class="share-container">
+            <button onclick="shareIndependentStagesLink()" class="btn-secondary">🔗 Copy Shareable Link</button>
+            <button id="refreshDataBtn" onclick="refreshDirectoryData()" class="btn-secondary"
+                title="Bypasses the cache to fetch the latest directory data immediately">🔄 Refresh Data</button>
+        </div>
+    </div>
+
+    <!-- ── Not found ───────────────────────────────────────────────── -->
+    <div id="indepentSatgeNotFound" style="display:none;" class="not-found-state">
+        <p>Independent stage / tea tent not found. <a href="independent_stages.html">View all independent stages / tea tents</a></p>
+    </div>
+
+</body>
+
+</html>
