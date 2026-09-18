@@ -504,69 +504,7 @@
             "performers_tbc": true,
             "stages": [],
             "schedule": [
-                {
-                    "date": "27/11/2026",
-                    "time": "19:30-21:30",
-                    "venue_id": "cygnet-theatre-exeter",
-                    "name": "Opening Night at Cygnet Theatre",
-                    "host_id": "sharon-jacksties",
-                    "type": "storytelling_shows",
-                    "performer_ids": [
-                        "amy-douglas",
-                        "henry-everett",
-                        "inez-aponte",
-                        "rebecca-bletcher"
-                    ]
-                },
-                {
-                    "date": "28/11/2026",
-                    "time": "16:00-19:00",
-                    "venue_id": "priory-room-mint-methodist",
-                    "name": "Story Round",
-                    "host_id": "sharon-jacksties",
-                    "type": "storyround",
-                    "performer": "Led by Sharon Jacksties"
-                },
-                {
-                    "date": "28/11/2026",
-                    "time": "10:00-12:00",
-                    "venue_id": "st-nicholas-priory-exeter",
-                    "name": "Two Boats, One River: where song and speech meet",
-                    "description": "Music and storytelling are deeply connected. They share cadence and pace, and underscore each other perfectly. But what about the voice? This workshop will focus on the inherent musicality and rhythm of language. Beginning from the premise that all natural speech is musical in its chime and chatter, we will explore the full vocal range of speech, playing with pitch, tone and rhythm, and finding ways to support and enhance the telling of a story.",
-                    "limited_places": 20,
-                    "booking_url": "https://artemis-storytelling.co.uk/tickets",
-                    "host_id": "nick-hennessey",
-                    "type": "workshop"
-                },
-                {
-                    "date": "28/11/2026",
-                    "time": "13:00-14:30",
-                    "venue_id": "st-nicholas-priory-exeter",
-                    "name": "Showcase of new work from up-and-coming storytellers",
-                    "description": "Free tickets available for storytelling club organisers/storytelling venue promoters and we have limited budget to pay travel expenses, if this would make a big difference to your being able to attend - please contact Katy to reserve a spot.",
-                    "ticket_url": "https://artemis-storytelling.co.uk/tickets",
-                    "type": "showcase"
-                },
-                {
-                    "date": "28/11/2026",
-                    "time": "15:00-17:00",
-                    "venue_id": "st-nicholas-priory-exeter",
-                    "name": "Dynamic Landscapes in Storytelling",
-                    "description": "Through fun and challenging on-your-feet exercises, games, and discussions, this workshop acts as a tonic for the storytellers' creative toolkit! Everyone is encouraged to play and improvise as they re- examine their stories and re-vitalise them through a creative connection with dynamic landscapes.\n\n\n\nWorking solo, in partners and in groups, the exercises aim to identify the archetypal spaces in a story, peel back the layers to expose emotional connections, and create word pools to conjure up the invisible world of the story.\n\n\n\nAnd we will examine the question, 'Where in this landscape is the storyteller?'\n\n\n\nIt will be exciting! Bring your notebooks, bring your story and bring your enthusiasm!",
-                    "limited_places": 20,
-                    "booking_url": "https://artemis-storytelling.co.uk/tickets",
-                    "host_id": "nell-phoenix",
-                    "type": "workshop"
-                },
-                {
-                    "date": "28/11/2026",
-                    "time": "19:30-21:30",
-                    "venue_id": "st-nicholas-priory-exeter",
-                    "name": "A Harper's Trade",
-                    "performer": "nick-hennessey",
-                    "type": "storytelling_shows",
-                    "ticket_url": ""
-                }
+               
             ]
         }
     },
