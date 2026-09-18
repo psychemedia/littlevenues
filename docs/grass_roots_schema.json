@@ -1,428 +1,534 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://example.com/festival-data.schema.json",
-    "title": "Festival Data",
-    "description": "Data model for festivals, promoters, independent stages, events and locations.",
-    "type": "object",
-    "properties": {
-        "promoters": {
-            "type": "object",
-            "description": "Promoters keyed by a stable promoter ID.",
-            "additionalProperties": {
-                "$ref": "#/$defs/promoter"
-            }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/festival-data.schema.json",
+  "title": "Festival Data",
+  "description": "Data model for festivals, promoters, independent stages, events and locations.",
+  "type": "object",
+  "properties": {
+    "promoters": {
+      "type": "object",
+      "description": "Promoters keyed by a stable promoter ID.",
+      "additionalProperties": {
+        "$ref": "#/$defs/promoter"
+      }
+    },
+    "independent_stages": {
+      "type": "object",
+      "description": "Independent stages, tents and similar festival spaces keyed by ID.",
+      "additionalProperties": {
+        "$ref": "#/$defs/independentStage"
+      }
+    },
+    "festivals": {
+      "type": "object",
+      "description": "Festival/event records keyed by a stable festival ID.",
+      "additionalProperties": {
+        "$ref": "#/$defs/festival"
+      }
+    },
+    "events": {
+      "type": "array",
+      "description": "General event records not represented as festivals.",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    },
+    "locations": {
+      "type": "object",
+      "description": "Locations keyed by a stable location ID.",
+      "additionalProperties": {
+        "$ref": "#/$defs/location"
+      }
+    },
+    "performers": {
+      "type": "object",
+      "description": "Performers keyed by stable performer ID.",
+      "additionalProperties": {
+        "$ref": "#/$defs/performerRecord"
+      }
+    }
+  },
+  "required": [
+    "promoters",
+    "independent_stages",
+    "festivals",
+    "events",
+    "locations",
+    "performers"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "promoter": {
+      "type": "object",
+      "$comment": "A promoter may have relationships to festivals, venues, artists or stages.",
+      "properties": {
+        "promoter_id": {
+          "type": "string",
+          "$comment": "Optional because some existing promoter records do not currently contain this field."
         },
-        "independent_stages": {
-            "type": "object",
-            "description": "Independent stages, tents and similar festival spaces keyed by ID.",
-            "additionalProperties": {
-                "$ref": "#/$defs/independentStage"
+        "name": {
+          "type": "string"
+        },
+        "ticketing_url": {
+          "type": "string"
+        },
+        "promoter_link": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "application_url": {
+          "type": "string"
+        },
+        "promoter_festivals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "promoter_venues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "promoter_artists": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "promoter_stages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "independentStage": {
+      "type": "object",
+      "$comment": "An independent stage may be a stage, tea tent, cabaret space, etc. Some records have a single type and some have multiple types.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "promoter_id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
+          ]
+        },
+        "popUp": {
+          "type": "boolean"
+        },
+        "prebooked": {
+          "type": "boolean"
+        },
+        "open_mic": {
+          "type": "boolean"
+        },
+        "session": {
+          "type": "boolean"
+        },
+        "booking_period": {
+          "type": "string"
         },
         "festivals": {
-            "type": "object",
-            "description": "Festival/event records keyed by a stable festival ID.",
-            "additionalProperties": {
-                "$ref": "#/$defs/festival"
-            }
-        },
-        "events": {
-            "type": "array",
-            "description": "General event records not represented as festivals.",
-            "items": {
-                "$ref": "#/$defs/event"
-            }
-        },
-        "locations": {
-            "type": "object",
-            "description": "Locations keyed by a stable location ID.",
-            "additionalProperties": {
-                "$ref": "#/$defs/location"
-            }
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
+      },
+      "additionalProperties": false
     },
-    "required": [
-        "promoters",
-        "independent_stages",
-        "festivals",
-        "events",
-        "locations"
-    ],
-    "additionalProperties": false,
-    "$defs": {
-        "promoter": {
-            "type": "object",
-            "$comment": "A promoter may have relationships to festivals, venues, artists or stages.",
-            "properties": {
-                "promoter_id": {
-                    "type": "string",
-                    "$comment": "Optional because some existing promoter records do not currently contain this field."
-                },
-                "name": {
-                    "type": "string"
-                },
-                "ticketing_url": {
-                    "type": "string"
-                },
-                "promoter_link": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "url": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "application_url": {
-                    "type": "string"
-                },
-                "promoter_festivals": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "promoter_venues": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "promoter_artists": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "promoter_stages": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            },
-            "additionalProperties": false
+    "festival": {
+      "type": "object",
+      "$comment": "A festival record represents the festival/event itself. It may be a one-off event, or it may represent a recurring festival with one or more running records.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "$comment": "Display name of the festival. For a one-off event this may include the year, e.g. 'Exeter Story Fix 2026'."
         },
-        "independentStage": {
-            "type": "object",
-            "$comment": "An independent stage may be a stage, tea tent, cabaret space, etc. Some records have a single type and some have multiple types.",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "promoter_id": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "facebook": {
-                    "type": "string",
-                    "format": "uri"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "type": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "array",
-                            "items": {
-                                "type": "string"
-                            }
-                        }
-                    ]
-                },
-                "popUp": {
-                    "type": "boolean"
-                },
-                "prebooked": {
-                    "type": "boolean"
-                },
-                "open_mic": {
-                    "type": "boolean"
-                },
-                "session": {
-                    "type": "boolean"
-                },
-                "booking_period": {
-                    "type": "string"
-                },
-                "festivals": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            },
-            "additionalProperties": false
+        "short_name": {
+          "type": "string"
         },
-        "festival": {
-            "type": "object",
-            "$comment": "A festival record represents the festival/event itself. It may be a one-off event, or it may represent a recurring festival with one or more running records.",
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "$comment": "Display name of the festival. For a one-off event this may include the year, e.g. 'Exeter Story Fix 2026'."
-                },
-                "short_name": {
-                    "type": "string"
-                },
-                "promoter_id": {
-                    "type": "string"
-                },
-                "location_id": {
-                    "type": "string"
-                },
-                "booking_url": {
-                    "type": "string"
-                },
-                "booking_period": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string"
-                },
-                "website": {
-                    "type": "string"
-                },
-                "ticket_url": {
-                    "type": "string"
-                },
-                "facebook": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "open_mic": {
-                    "type": "boolean"
-                },
-                "type": {
-                    "type": "string"
-                },
-                "primary_type": {
-                    "type": "string"
-                },
-                "independent_stages": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "stages": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "event_flyer": {
-                    "type": "string"
-                },
-                "event_flyers": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "performers": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/$defs/performer"
-                    }
-                },
-                "performers_tbc": {
-                    "type": "boolean"
-                },
-                "schedule": {
-                    "type": "array",
-                    "$comment": "Schedule belongs directly to the festival record when the festival is represented as a single occurrence, such as a one-off event.",
-                    "items": {
-                        "$ref": "#/$defs/scheduleItem"
-                    }
-                },
-                "runnings": {
-                    "type": "object",
-                    "$comment": "Optional. Used when a festival has separate occurrences/runnings, such as Gig In a Field 9. The absence of runnings does not necessarily mean the festival is one-off; it can also simply mean running information has not yet been recorded.",
-                    "additionalProperties": {
-                        "$ref": "#/$defs/running"
-                    }
-                }
-            },
-            "additionalProperties": false
+        "promoter_id": {
+          "type": "string"
         },
-        "running": {
-            "type": "object",
-            "$comment": "A running represents one particular occurrence of a recurring festival. It can contain occurrence-specific dates, ticketing and promotional material.",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "short_name": {
-                    "type": "string"
-                },
-                "year": {
-                    "type": "integer"
-                },
-                "dates": {
-                    "$ref": "#/$defs/dates"
-                },
-                "ticket_url": {
-                    "type": "string"
-                },
-                "event_flyer": {
-                    "type": "string"
-                },
-                "event_flyers": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "open_mic_times": {
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
+        "location_id": {
+          "type": "string"
+        },
+        "booking_url": {
+          "type": "string"
+        },
+        "booking_period": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        },
+        "ticket_url": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "open_mic": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "string"
+        },
+        "primary_type": {
+          "type": "string"
+        },
+        "independent_stages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "event_flyer": {
+          "type": "string"
+        },
+        "event_flyers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "performers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/performer"
+          }
+        },
+        "performers_tbc": {
+          "type": "boolean"
+        },
+        "schedule": {
+          "type": "array",
+          "$comment": "Schedule belongs directly to the festival record when the festival is represented as a single occurrence, such as a one-off event.",
+          "items": {
+            "$ref": "#/$defs/scheduleItem"
+          }
+        },
+        "runnings": {
+          "type": "object",
+          "$comment": "Optional. Used when a festival has separate occurrences/runnings, such as Gig In a Field 9. The absence of runnings does not necessarily mean the festival is one-off; it can also simply mean running information has not yet been recorded.",
+          "additionalProperties": {
+            "$ref": "#/$defs/running"
+          }
+        },
+        "event_name": {
+          "type": "string"
+        },
+        "event_url": {
+          "type": "string"
+        },
+        "venue_id": {
+          "type": "string"
+        },
+        "ticketing_url": {
+          "type": "string"
+        },
+        "genre": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fire_pit": {
+          "type": "boolean"
+        },
+        "date": {
+          "type": "string"
+        },
+        "start_date": {
+          "type": "string",
+          "$comment": "A festival may have a 'start_date' and an 'end_date' (and maybe an 'early_date') for multi-day festivals, or it may have a single 'date' for single day venue."
+        },
+        "end_date": {
+          "type": "string"
         },
         "dates": {
-            "type": "object",
-            "$comment": "Dates are currently represented in the source data as strings such as DD/MM/YYYY.",
-            "properties": {
-                "start": {
-                    "type": "string"
-                },
-                "end": {
-                    "type": "string"
-                },
-                "early": {
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
+          "$ref": "#/$defs/dates",
+          "$comment": "Alternative to flat start_date/end_date: some one-off festival records (e.g. deepdale_festival, southdowns_festival) nest their dates under a 'dates' object instead, the same shape used by runnings."
+        }
+      },
+      "additionalProperties": false
+    },
+    "running": {
+      "type": "object",
+      "$comment": "A running represents one particular occurrence of a recurring festival. It can contain occurrence-specific dates, ticketing and promotional material.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "short_name": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "dates": {
+          "$ref": "#/$defs/dates",
+          "$comment": "Structure for a multi-date festival."
+        },
+        "date": {
+          "type": "string",
+          "$comment": "Structure for a single day festival."
+        },
+        "ticket_url": {
+          "type": "string"
+        },
+        "event_flyer": {
+          "type": "string"
+        },
+        "event_flyers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "open_mic_times": {
+          "type": "string"
+        },
+        "event_url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "dates": {
+      "type": "object",
+      "$comment": "Dates are currently represented in the source data as strings such as DD/MM/YYYY. The source data is inconsistent about key naming: some records use start/end/early, others use start_date/end_date/early_date (e.g. runnings purbeck_folk_2027, poole_harbour_2027, days-in-the-sun-2026/2027 use the _date form). Both forms are permitted here; consumers should check both.",
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        },
+        "early": {
+          "type": "string"
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "early_date": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "performer": {
+      "type": "object",
+      "properties": {
+        "performer_id": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "performer_id"
+      ],
+      "additionalProperties": false
+    },
+    "scheduleItem": {
+      "type": "object",
+      "$comment": "An individual scheduled activity within a festival occurrence. The source data allows different kinds of schedule entries, including shows, workshops, showcases and story rounds.",
+      "properties": {
+        "date": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        },
+        "venue_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "host_id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "performer_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "performer": {
-            "type": "object",
-            "properties": {
-                "performer_id": {
-                    "type": "string"
-                },
-                "role": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "performer_id"
-            ],
-            "additionalProperties": false
+          "type": "string"
         },
-        "scheduleItem": {
-            "type": "object",
-            "$comment": "An individual scheduled activity within a festival occurrence. The source data allows different kinds of schedule entries, including shows, workshops, showcases and story rounds.",
-            "properties": {
-                "date": {
-                    "type": "string"
-                },
-                "time": {
-                    "type": "string"
-                },
-                "venue_id": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "host_id": {
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string"
-                },
-                "performer_ids": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "performer": {
-                    "type": "string"
-                },
-                "limited_places": {
-                    "type": "integer",
-                    "minimum": 0
-                },
-                "booking_url": {
-                    "type": "string"
-                },
-                "ticket_url": {
-                    "type": "string"
-                }
-            },
-            "additionalProperties": false
+        "limited_places": {
+          "type": "integer",
+          "minimum": 0
         },
-        "event": {
-            "type": "object",
-            "$comment": "A general event record outside the festival collection.",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "date": {
-                    "type": "string"
-                },
-                "venue_id": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "ticket_url": {
-                    "type": "string"
-                },
-                "url": {
-                    "type": "string"
-                }
-            },
-            "additionalProperties": true
+        "booking_url": {
+          "type": "string"
         },
-        "location": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "address": {
-                    "type": "string"
-                },
-                "city": {
-                    "type": "string"
-                },
-                "county": {
-                    "type": "string"
-                },
-                "postcode": {
-                    "type": "string"
-                },
-                "country": {
-                    "type": "string"
-                },
-                "latitude": {
-                    "type": "number"
-                },
-                "longitude": {
-                    "type": "number"
-                }
-            },
-            "additionalProperties": true
+        "ticket_url": {
+          "type": "string"
         }
+      },
+      "additionalProperties": false
+    },
+    "event": {
+      "type": "object",
+      "$comment": "A general event record outside the festival collection.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "venue_id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "ticket_url": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "full_address": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "camping": {
+          "type": "boolean"
+        },
+        "latlon": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ]
+    },
+    "performerRecord": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "facebook_group": {
+          "type": "string"
+        },
+        "musician": {
+          "type": "boolean"
+        },
+        "poet": {
+          "type": "boolean"
+        },
+        "bio": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false
     }
+  },
+  "$comment": "The normalized feed contains the standard collections plus some festival records at the top level; patternProperties permits those normalized festival IDs."
 }

@@ -63,13 +63,130 @@ function loadSelectedFestival() {
 }
 
 // ---------------------------------------------------------------------------
-// Festival status
+// Festival status / date + venue resolution
+//
+// The current data model (grass_roots_schema.json) puts a festival's dates,
+// ticket_url, name overrides etc. inside fest.runnings{ID}.dates, not at the
+// top level of the festival record — that's only used by older/simpler
+// one-off records (e.g. ffs-fest-2026) that still carry start_date/end_date
+// directly. On top of that split, the source data is inconsistent about the
+// shape of a "dates" object itself (some use start/end, some start_date/
+// end_date — e.g. purbeck_folk_2027, poole_harbour_2027, the days-in-the-sun
+// runnings), and a handful of records (ragged-bear-2026, the
+// wigan-diggers-2026 running) skip a dates object entirely and just carry a
+// bare single "date" string. The helpers below understand all of these
+// shapes so the rest of this file doesn't have to.
 // ---------------------------------------------------------------------------
+
+/**
+ * Pull raw start/end date strings (DD/MM/YYYY) out of a festival or running
+ * record, whichever of the shapes described above it uses.
+ * @returns {{start: string|null, end: string|null}}
+ */
+function extractDates(obj) {
+  if (!obj) return { start: null, end: null };
+  const nested = obj.dates;
+  if (nested) {
+    const start = nested.start || nested.start_date || null;
+    if (start) {
+      return { start, end: nested.end || nested.end_date || start };
+    }
+  }
+  if (obj.start_date) {
+    return { start: obj.start_date, end: obj.end_date || obj.start_date };
+  }
+  if (obj.date) {
+    return { start: obj.date, end: obj.date };
+  }
+  return { start: null, end: null };
+}
+
+/**
+ * Pick the most relevant running from fest.runnings{}: the one currently in
+ * progress if any, else the soonest future one, else the most recent past
+ * one. Returns { key, r, start, end } (start/end as parsed Dates) or null.
+ */
+function pickFestivalRunning(fest) {
+  const runnings = fest.runnings;
+  if (!runnings || typeof runnings !== "object") return null;
+
+  const today = getTodayMidnight();
+  const candidates = Object.entries(runnings)
+    .map(([key, r]) => {
+      const { start: startStr, end: endStr } = extractDates(r);
+      return {
+        key,
+        r,
+        start: parseDateString(startStr),
+        end: parseDateString(endStr) || parseDateString(startStr),
+      };
+    })
+    .filter((c) => c.start);
+
+  if (!candidates.length) return null;
+
+  const current = candidates.find((c) => c.start <= today && c.end >= today);
+  if (current) return current;
+
+  const future = candidates
+    .filter((c) => c.start > today)
+    .sort((a, b) => a.start - b.start);
+  if (future.length) return future[0];
+
+  return candidates.sort((a, b) => b.start - a.start)[0];
+}
+
+/**
+ * Resolve a festival's effective start/end date strings (DD/MM/YYYY),
+ * preferring the festival's own direct dates (flat start_date/end_date, a
+ * nested dates{} object, or a bare date) if present, otherwise falling back
+ * to the picked running's dates.
+ * @returns {{start: string|null, end: string|null}}
+ */
+function getFestivalDates(fest) {
+  const direct = extractDates(fest);
+  if (direct.start) return direct;
+  const running = pickFestivalRunning(fest);
+  if (running) {
+    return extractDates(running.r);
+  }
+  return { start: null, end: null };
+}
+
+/**
+ * Resolve the location/venue id for a festival. Most records use
+ * location_id; a few legacy one-off records (e.g. ffs-fest-2026) use
+ * venue_id instead.
+ */
+function getFestivalVenueId(fest) {
+  return fest.location_id || fest.venue_id || null;
+}
+
+/**
+ * Merge fest-level display fields with the picked running's fields, since
+ * things like ticket_url / event_flyer(s) / a running-specific name can
+ * live on either, depending on whether the festival has runnings at all.
+ */
+function getFestivalDisplayFields(fest) {
+  const running = pickFestivalRunning(fest);
+  const r = running?.r || {};
+  return {
+    running,
+    dates: getFestivalDates(fest),
+    ticketUrl: fest.ticket_url || r.ticket_url || "",
+    eventFlyer: fest.event_flyer || r.event_flyer || "",
+    eventFlyers:
+      Array.isArray(fest.event_flyers) && fest.event_flyers.length
+        ? fest.event_flyers
+        : r.event_flyers || [],
+  };
+}
 
 function getFestivalStatus(fest) {
   const today = getTodayMidnight();
-  const start = parseDateString(fest.start_date);
-  const end = parseDateString(fest.end_date);
+  const { start: startStr, end: endStr } = getFestivalDates(fest);
+  const start = parseDateString(startStr);
+  const end = parseDateString(endStr);
   if (!start || !end) return "unknown";
   if (end < today) return "past";
   if (start > today) return "future";
@@ -205,22 +322,39 @@ function parseOnePart(part, suffix, preferPM) {
   return h * 60 + m;
 }
 
-// Build a stage_id -> display name lookup from fest.stages[].
-// Falls back gracefully if fest.stages is absent (older festival records).
+// Build a stage_id -> display name lookup for a festival.
+//
+// Two shapes are supported:
+//  - fest.independent_stages: an array of ids referencing the top-level
+//    independent_stages collection (the current schema's shape).
+//  - fest.stages: a legacy array of embedded {stage_id, name} objects.
 function buildStagesLookup(fest) {
   const lookup = {};
-  for (const s of fest.stages || []) {
-    if (s.stage_id) lookup[s.stage_id] = s.name || s.stage_id;
+
+  const globalStages = eventsData?.independent_stages || {};
+  for (const id of fest.independent_stages || []) {
+    lookup[id] = globalStages[id]?.name || id;
   }
+
+  for (const s of fest.stages || []) {
+    if (s && typeof s === "object" && s.stage_id && !lookup[s.stage_id]) {
+      lookup[s.stage_id] = s.name || s.stage_id;
+    }
+  }
+
   return lookup;
 }
 
 // Resolve a schedule item's stage to a display string.
-// Prefers the structured stage_id (looked up against fest.stages[]);
-// falls back to a legacy free-text `stage` field; defaults to "Main Stage".
+// Prefers a structured stage_id (looked up against the stages lookup); then
+// a legacy free-text `stage` field; then the item's venue_id (looked up
+// against locations, since current-schema schedule items carry venue_id
+// rather than a stage reference); finally defaults to "Main Stage".
 function resolveStageName(item, stagesLookup) {
   if (item.stage_id) return stagesLookup[item.stage_id] || item.stage_id;
-  return item.stage || "Main Stage";
+  if (item.stage) return item.stage;
+  if (item.venue_id) return venuesLookup[item.venue_id]?.name || item.venue_id;
+  return "Main Stage";
 }
 
 function buildProgramme(fest) {
@@ -936,9 +1070,14 @@ function displayFestival(festivalId) {
   document.getElementById("festivalSubtitle").textContent =
     fest.short_name || "";
 
+  // Resolve schema fields that may live on the festival itself or on its
+  // picked running (see getFestivalDisplayFields).
+  const display = getFestivalDisplayFields(fest);
+  const venueId = getFestivalVenueId(fest);
+
   // Date range
-  const start = parseDateString(fest.start_date);
-  const end = parseDateString(fest.end_date);
+  const start = parseDateString(display.dates.start);
+  const end = parseDateString(display.dates.end);
   const longFmt = {
     weekday: "long",
     day: "numeric",
@@ -973,7 +1112,7 @@ function displayFestival(festivalId) {
   statusEl.style.display = STATUS[status].text ? "" : "none";
 
   // Venue
-  const venue = venuesLookup[fest.venue_id] || {};
+  const venue = venuesLookup[venueId] || {};
   const venueEl = document.getElementById("festivalVenue");
   venueEl.innerHTML = "";
   if (venue.name) {
@@ -983,9 +1122,9 @@ function displayFestival(festivalId) {
     if (venue.full_address && venue.full_address !== venue.name) {
       loc.textContent += `, ${venue.full_address}`;
     }
-    if (fest.venue_id) {
+    if (venueId) {
       const vl = document.createElement("a");
-      vl.href = `venues.html?venue=${encodeURIComponent(fest.venue_id)}`;
+      vl.href = `venues.html?venue=${encodeURIComponent(venueId)}`;
       vl.className = "venue-page-link";
       vl.textContent = "i";
       venueEl.appendChild(vl);
@@ -997,8 +1136,8 @@ function displayFestival(festivalId) {
   const linksEl = document.getElementById("festivalLinks");
   linksEl.innerHTML = "";
   [
-    { url: fest.url, label: "🌐 Festival Website", cls: "" },
-    { url: fest.ticket_url, label: "🎟 Tickets", cls: "festival-ticket-link" },
+    { url: fest.url || fest.website, label: "🌐 Festival Website", cls: "" },
+    { url: display.ticketUrl, label: "🎟 Tickets", cls: "festival-ticket-link" },
     { url: fest.facebook, label: "📘 Facebook", cls: "" },
   ].forEach(({ url, label, cls }) => {
     if (!url) return;
@@ -1030,7 +1169,10 @@ function displayFestival(festivalId) {
   // (see shared_utils.js); render one image per flyer.
   const flyerEl = document.getElementById("festivalFlyer");
   flyerEl.innerHTML = "";
-  const festFlyers = getEventLevelFlyers(fest);
+  const festFlyers = getEventLevelFlyers({
+    event_flyer: display.eventFlyer,
+    event_flyers: display.eventFlyers,
+  });
   if (festFlyers.length > 0) {
     festFlyers.forEach((f) => {
       const img = document.createElement("img");
@@ -1396,7 +1538,8 @@ function addFestivalMarkersToMap(festivalId, fest) {
   markers = clearMarkers(map, markers);
   const bounds = [];
 
-  const festVenue = venuesLookup[fest.venue_id] || {};
+  const festVenueId = getFestivalVenueId(fest);
+  const festVenue = venuesLookup[festVenueId] || {};
   if (festVenue.latlon) {
     const [lat, lon] = festVenue.latlon;
     const m = L.circleMarker([lat, lon], {
@@ -1407,7 +1550,7 @@ function addFestivalMarkersToMap(festivalId, fest) {
       opacity: 1,
       fillOpacity: 0.9,
     }).addTo(map);
-    m.venue_id = fest.venue_id;
+    m.venue_id = festVenueId;
     m.bindPopup(
       `<div class="popup-content"><h3>${escapeHtml(fest.name)}</h3><p>${escapeHtml(festVenue.name || "")}</p></div>`,
     );
@@ -1526,8 +1669,9 @@ function buildFestivalCard(festId, fest) {
   card.className = "festival-overview-card";
   card.style.cursor = "pointer";
 
-  const start = parseDateString(fest.start_date);
-  const end = parseDateString(fest.end_date);
+  const { start: startStr, end: endStr } = getFestivalDates(fest);
+  const start = parseDateString(startStr);
+  const end = parseDateString(endStr);
 
   const name = document.createElement("div");
   name.className = "festival-card-name";
@@ -1555,7 +1699,7 @@ function buildFestivalCard(festId, fest) {
     card.appendChild(dates);
   }
 
-  const venue = venuesLookup[fest.venue_id] || {};
+  const venue = venuesLookup[getFestivalVenueId(fest)] || {};
   if (venue.name) {
     const loc = document.createElement("div");
     loc.className = "festival-card-location";
@@ -1625,7 +1769,7 @@ function populateFestivalDropdown() {
     .map(([id, f]) => ({
       id,
       name: f.name,
-      start: parseDateString(f.start_date),
+      start: parseDateString(getFestivalDates(f).start),
     }))
     .sort((a, b) => (a.start || 0) - (b.start || 0))
     .forEach(({ id, name }) => {

@@ -19,36 +19,67 @@
     <nav class="site-nav" aria-label="Site navigation">
         <a href="index.html">🏠 Home</a>
         <a href="small_festivals.html">Small Festivals</a>
-        <a href="independent_stages.html">Independent Stages / Tea tents</a>
+        <a href="independent_stages.html" aria-current="page">Independent Stages / Tea tents</a>
         <a href="promoters.html">Promoters</a>
     </nav>
 
-    <h1>Grass Roots Scene — Independent Stages and Festival Teat Tents Directory</h1>
-    <h2>Directory of small, independent, grass roots music festival stages and teas tents with stages and performance opportunities.</h2>
+    <h1>Grass Roots Scene — Independent Stages and Festival Tea Tents Directory</h1>
+    <h2>Directory of small, independent, grass roots music festival stages and tea tents with stages and performance opportunities.</h2>
+
     <!-- ── Overview panels ─────────────────────────────────────────── -->
+
+    <div id="allStagesBody">
+        <p class="stage-panel-placeholder">Loading independent stages / tea tents…</p>
+    </div>
 
     <!-- ── Selector ────────────────────────────────────────────────── -->
 
-    <div class="indepentStages-controls">
-        <div class="indepentStages-selector">
-            <label for="indepentStagesSelect">Independent stages / tea tents:</label>
-            <select id="indepentStagesSelect" onchange="handleIndependentStagesSelectChange()">
-                <option value="">Select a promoter...</option>
+    <div class="stage-controls">
+        <div class="stage-selector">
+            <label for="independentStageSelect">Independent stages / tea tents:</label>
+            <select id="independentStageSelect" onchange="handleIndependentStageSelectChange()">
+                <option value="">Select a stage / tea tent...</option>
             </select>
-            <button onclick="loadSelectedIndependentStages()" class="btn-primary">Show Independent stage / tea tent</button>
+            <button onclick="loadSelectedIndependentStage()" class="btn-primary">Show Independent stage / tea tent</button>
         </div>
         <div class="share-container">
-            <button onclick="shareIndependentStagesLink()" class="btn-secondary">🔗 Copy Shareable Link</button>
+            <button onclick="shareIndependentStageLink()" class="btn-secondary">🔗 Copy Shareable Link</button>
             <button id="refreshDataBtn" onclick="refreshDirectoryData()" class="btn-secondary"
                 title="Bypasses the cache to fetch the latest directory data immediately">🔄 Refresh Data</button>
         </div>
     </div>
 
     <!-- ── Not found ───────────────────────────────────────────────── -->
-    <div id="indepentSatgeNotFound" style="display:none;" class="not-found-state">
+    <div id="independentStageNotFound" style="display:none;" class="not-found-state">
         <p>Independent stage / tea tent not found. <a href="independent_stages.html">View all independent stages / tea tents</a></p>
     </div>
 
+    <!-- ── Detail panel ────────────────────────────────────────────── -->
+    <div id="independentStageContent" style="display:none;">
+        <h2 id="independentStageTitle"></h2>
+        <div id="independentStageSubtitle" style="display:none;"></div>
+
+        <div id="independentStageBadges" class="badge-row"></div>
+        <div id="independentStageMeta"></div>
+        <div id="independentStageLinks"></div>
+        <div id="independentStagePromoter" style="display:none;"></div>
+
+        <div id="independentStageDescription"></div>
+
+        <h3 class="stage-section-heading">Festivals featuring this stage</h3>
+        <div id="independentStageFestivalsList"></div>
+    </div>
+
+    <!-- ── Colophon ────────────────────────────────────────────────── -->
+    <div class="about">
+        <p>Part of the Grass Roots Scene grassroots-music directory — independent festival stages and tea tents,
+            and the festivals they turn up at.</p>
+        <div id="dataLastUpdated"></div>
+    </div>
+
+        <script src="recurrence-engine.js"></script>
+        <script src="shared_utils.js"></script>
+        <script src="independent_stages.js"></script>
 </body>
 
 </html>

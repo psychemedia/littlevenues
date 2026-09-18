@@ -178,7 +178,7 @@
                 "magic-teapot"
             ],
             "runnings": {
-                "incider-2027": {
+                "wickham-2027": {
                     "year": 2027,
                     "dates": {
                         "start": "29/07/2027",
@@ -296,6 +296,65 @@
                 }
             }
         },
+        "foolhardy_folk_festival": {
+            "name": "Foolhardy Folk Festival",
+            "runnings":{"foolhardy_folk_2026":{"date":"30/08/2026"}}
+        },
+        "deepdale_festival": {
+            "name": "Deepdale Festival",
+            "url": "https://deepdalecamping.co.uk/festival/",
+            "dates": {
+                "start_date": "24/09/2026",
+                "end_date": "27/09/2026"
+            }
+        },
+        "southdowns_festival": {
+            "name": "Southdowns Music Festival",
+            "url": "https://southdownsfolkfest.co.uk/",
+            "dates": {
+                "start_date": "11/09/2026",
+                "end_date": "13/09/2026"
+            }
+        },
+        "purbeck_folk_festival": {
+            "name": "Purbeck Valley Folk Festival",
+            "url": "https://www.purbeckvalleyfolkfestival.co.uk/",
+            "runnings": {
+                "purbeck_folk_2027": {
+                    "dates": {
+                        "start_date": "19/08/2027",
+                        "end_date": "22/08/2027"
+                    }
+                }
+            }
+        },
+        "tolpuddle_martyrs_festival": {
+            "name": "Tolpuddle Martyrs Festival",
+            "url": "https://www.tolpuddlemartyrs.org.uk/festival"
+        },
+        "poole_harbour_festival": {
+            "name": "Poole Harbour Festival",
+            "url": "https://www.purbeckvalleyfolkfestival.co.uk/",
+            "runnings": {
+                "poole_harbour_2027": {
+                    "ticket_url": "https://tickets.pooleharbourfestival.com/events/pooleharbourfestival1/2342821",
+                    "dates": {
+                        "start_date": "30/07/2027",
+                        "end_date": "01/08/2027"
+                    }
+                }
+            }
+        },
+        "wigan-diggers": {
+            "name": "Wigan Diggers Festival",
+            "url": "https://wigandiggersfestival.org/",
+            "runnings": {
+                "wigan-diggers-2026": {
+                    "date": "12/09/2026",
+                    "event_flyer": "2026_09_12_wigan_diggers.webp"
+                }
+            }
+        },
         "ey_up_mi_duck": {
             "name": "Ey Up Mi Duck",
             "promoter_id": "wroot_rocks",
@@ -315,6 +374,55 @@
                     "event_flyer": ""
                 }
             }
+        },
+        "days-in-the-sun": {
+            "name": "Days In The Sun",
+            "event_name": "Days In The Sun",
+            "short_name": "",
+            "venue_id": "new-bliss-farm-rudford",
+            "url": "https://www.daysinthesunfestival.com/",
+            "primary_type": "music",
+            "genre": [
+                "folk",
+                "roots"
+            ],
+            "ticketing_url": "https://www.daysinthesunfestival.com/tickets",
+            "facebook": "",
+            "description": "Days In The Sun is a 3 day Folk & Roots festival based in Gloucestershire.\n\n\n\nOur title comes from the Roving Crows song 'Days In The Sun', which encourages us to live our dreams, and this festival is the places where we are giving individuals and groups a space to be the best that they can be within the arts.\n\n\n\nWe are creating a save haven for artists of all ages to express themself, show their talents and sell their creations.\n\n\n\nDays In The Sun is curated jointly by Caitlin Barrett and Paul Chief O'Neill, who have programmed and curated many events for third parties over the last 20 years, leading to them creating this bespoke event which they will grow slowly as the years progress.\n\n\n\nWhether you are an artist, a potential artist, just as importantly, a lover of the arts then Days In The Sun is the place where you can be a part of a growing community of like-minded people, sharing their thoughts, feelings, creations and ambitions.",
+            "runnings": {
+                "days-in-the-sun-2026": {
+                    "dates": {
+                        "start_date": "18/09/2026",
+                        "end_date": "20/09/2026"
+                    },
+                    "ticket_url": "https://www.daysinthesunfestival.com/tickets"
+                },
+                "days-in-the-sun-2027": {
+                    "dates": {
+                        "start_date": "25/07/2026",
+                        "end_date": "27/07/2026"
+                    },
+                    "ticket_url": "https://www.daysinthesunfestival.com/2027-tickets"
+                }
+            },
+            "event_flyer": "2026_10_31_ragged_bear_nuneaton.avif",
+            "event_flyers": [],
+            "performers": []
+        },
+        "ragged-bear-2026": {
+            "name": "Ragged Bear Festival",
+            "event_name": "Ragged Bear Festival 2026",
+            "short_name": "",
+            "venue_id": "queens-hall-nuneaton",
+            "url": "https://www.raggedbear.com/",
+            "date": "31/10/2026",
+            "primary_type": "music",
+            "ticket_url": "https://www.raggedbear.com/event-details",
+            "facebook": "",
+            "description": "12 hours of music, food and dancing, programmed to keep the music moving so you can catch as much of the lineup as possible. All at what At The Barrier called “arguably the best value festival on the circuit.\n\n\n\nSkinny Lister, with Greenman Rising, The Haar, RuMac, Nick Parker and Ben Wain, Man The Lifeboats, True Foxes, Lauren South, The Band From County Hell, Gaelforce, Malin Hill, Liam Vincent & The Odd Foxes, Hobnob Jane & The Backyard Frogs, Stevie Simpson & The Damn Fine Folk, B-Sydes, Tanglemist and  Alabama Breeze.\n\n\n\nExpect Shanties, Morris, craft, food, drink and no mud. Just a full day with one of the best value tickets on the circuit.",
+            "event_flyer": "2026_10_31_ragged_bear_nuneaton.avif",
+            "event_flyers": [],
+            "performers": []
         },
         "ffs-fest-2026": {
             "name": "FFS Fest",
@@ -422,6 +530,32 @@
                 51.06674,
                 -1.32225
             ]
+        },
+        "queens-hall-nuneaton": {
+            "id": "queens-hall-nuneaton",
+            "name": "Queens Hall, Nuneaton",
+            "city": "Nuneaton",
+            "postcode": "CV11 5LA",
+            "full_address": "The Crew / Queens Hall, 75-77, Queens Road, Nuneaton, CV11 5LA",
+            "url": "https://crewrock.co.uk/the-queens-hall/",
+            "camping": false,
+            "latlon": [
+                52.52255,
+                -1.47347
+            ]
+        },
+        "new-bliss-farm-rudford": {
+            "id": "new-bliss-farm-rudford",
+            "name": "New Bliss Farm, Rudford",
+            "city": "Gloucester",
+            "postcode": "GL2 8DX",
+            "full_address": "New Bliss Farm, Rudford, Gloucestershire, GL2 8DX",
+            "url": "",
+            "camping": false,
+            "latlon": [
+                51.89985,
+                -2.33204
+            ]
         }
     },
     "performers": {
@@ -450,24 +584,24 @@
             "instagram": "nick_parker_music",
             "musician": true,
             "bio": "Glastonbury based Nick Parker started gigging in his early teens playing mandolin and singing in folk/rock/skiffle band 'Why?', and spent the next 10 years bouncing around on stages at hundreds of venues and festivals around the UK and Europe. In 2010 Nick embarked on a solo career and has since enjoyed over 30 tours around the UK and Europe, releasing five full-length albums along the way, many songs from which have been featured on BBC6 Music among many other radio stations.\n\n\n\nAlthough primarily a solo effort Nick often plays with his band 'Nick Parker and the False Alarms' which is a folky/rocky/country affair using guitars, fiddle, pedal steel, banjo, mandolin, cornet, accordion, keys, whistles, pipes, bass and drums, often with various members switching instruments when space permits. At a recent gig the band were described as 'A British Arcade Fire', something that Nick was very pleased about. Nick also often gigs as a duo with fiddle player Ben Wain."
+        },
+        "jess-silk": {
+            "id": "jess-silk",
+            "name": "Jess Silk",
+            "url": "https://jesssilk.co.uk/",
+            "facebook": "JessSilkMusic",
+            "instagram": "jess_silk",
+            "musician": true,
+            "bio": "Jess Silk is a guitarist, singer and songwriter from the Black Country. Her passionate and melodic brand of folk/punk music gets people sitting up and listening. Armed only with an increasingly sticker-covered acoustic guitar, lyrics right from the heart and a distinctive, powerful voice that many don't expect, Jess plays to audiences up and down the UK and has shared stages with many well known names among the folk/punk scene."
+        },
+        "samantics": {
+            "id": "samantics",
+            "name": "Samantics",
+            "url": "https://www.samantics.co.uk/",
+            "facebook": "",
+            "instagram": "",
+            "musician": true,
+            "bio": "Samantics is a livewire rap-poet and musician whose lyrical maps are a personal stroll around his vision of England and his own life. Taking us on a multitudinous odyssey of instrumentation - ukulele, piano, beats, bass, electronics and more - all created and controlled via a loop station and sampler. His live shows are a frantic, funny, and thrilling experience. Skirting the line between slam poet, social commentator and street busker, Samantics is an unmissable solo artist bound to spike your energy levels."
         }
-    },
-    "jess-silk": {
-        "id": "jess-silk",
-        "name": "Jess Silk",
-        "url": "https://jesssilk.co.uk/",
-        "facebook": "JessSilkMusic",
-        "instagram": "jess_silk",
-        "musician": true,
-        "bio": "Jess Silk is a guitarist, singer and songwriter from the Black Country. Her passionate and melodic brand of folk/punk music gets people sitting up and listening. Armed only with an increasingly sticker-covered acoustic guitar, lyrics right from the heart and a distinctive, powerful voice that many don't expect, Jess plays to audiences up and down the UK and has shared stages with many well known names among the folk/punk scene."
-    },
-    "samantics": {
-        "id": "samantics",
-        "name": "Samantics",
-        "url": "",
-        "facebook": "",
-        "instagram": "",
-        "musician": true,
-        "bio": ""
     }
 }

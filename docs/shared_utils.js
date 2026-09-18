@@ -1609,7 +1609,7 @@ async function loadEventsData(cacheBuster) {
     applyRepertoireInheritance(eventsData);
     applyClubInheritance(eventsData);
     const toursLookup = eventsData.tours || {};
-    const venuesLookup = eventsData.venues || {};
+    const venuesLookup = eventsData.locations || {}; // schema key is "locations", not the legacy "venues"
     const performersLookup = eventsData.performers || {};
     const podcastsLookup = buildPodcastsLookup(eventsData);
 
@@ -2006,7 +2006,7 @@ async function checkForNewerEventsDataBackground() {
       applyRepertoireInheritance(eventsData);
       applyClubInheritance(eventsData);
       const toursLookup = eventsData.tours || {};
-      const venuesLookup = eventsData.venues || {};
+      const venuesLookup = eventsData.locations || {}; // schema key is "locations", not the legacy "venues"
       const performersLookup = eventsData.performers || {};
       const newTimestamp = Date.now();
 
