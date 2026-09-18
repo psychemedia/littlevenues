@@ -1,0 +1,313 @@
+{
+    "promoters": {
+        "wroot_rocks": {
+            "promoter_id": "wroot_rocks",
+            "name": "Wroot Rocks",
+            "ticketing_url": "",
+            "promoter_link": "https://www.wrootrocks.com/",
+            "description": "",
+            "application_url": "",
+            "promoter_festivals": [
+                "gig_in_a_field",
+                "ey_up_mi_duck"
+            ],
+            "promoter_venues": [],
+            "promoter_artists": []
+        },
+        "fuelled_by_cider": {
+            "name": "Fuelled By Cider",
+            "promoter_link": "https://www.fuelledbycider.com/",
+            "promoter_festivals": [
+                "incider",
+                "outcider",
+                "cursus",
+                "mad-dog-mcrea-weekender"
+            ]
+        },
+        "the_music_baa": {
+            "name": "The Music Baa",
+            "promoter_link": "https://www.themusicbaa.co.uk/",
+            "promoter_festivals": [
+                "grass_roots_grazin"
+            ]
+        },
+        "trowbridge_pump": {
+            "promoter_festivals": [
+                "trowbridge-festival"
+            ]
+        },
+        "maui_waui_events": {
+            "name": "Maui Waui",
+            "url": "https://www.mauiwauievents.co.uk/",
+            "promoter_stages": [
+                "maui-waui"
+            ]
+        }
+    },
+    "independent_stages": {
+        "underground-overground-stage": {
+            "name": "Underground Overground Stage",
+            "url": "https://www.facebook.com/people/Underground-Overground-Stage/61586042694908",
+            "type": "stage",
+            "popUp": false,
+            "prebooked": true,
+            "open_mic": false,
+            "festivals": [
+                "wickham-festival"
+            ]
+        },
+        "something-else": {
+            "name": "Something Else Tea Tent",
+            "url": "https://somethingelseteatent.wordpress.com/",
+            "description": "",
+            "type": [
+                "stage",
+                "tea-tent"
+            ],
+            "prebooked": true,
+            "booking_period": "",
+            "facebook": "https://www.facebook.com/sefests/",
+            "festivals": [
+                "bearded-theory"
+            ]
+        },
+        "magic-teapot": {
+            "name": "The Magic Teapot",
+            "url": "https://www.magicteapot.co.uk/",
+            "type": "tea-tent",
+            "popUp": true,
+            "session": true,
+            "festivals": [
+                "wickham-festival",
+                "bearded-theory",
+                "beautiful-days"
+            ]
+        },
+        "convoy-cabaret": {
+            "name": "Convoy Cabaret",
+            "url": "https://convoycabaret.uk/",
+            "facebook": "https://www.facebook.com/convoycabaret/",
+            "type": "stage",
+            "festivals": [
+                "bearded-theory"
+            ]
+        },
+        "rebel-tent": {
+            "name": "Rebel Tent",
+            "type": "stage",
+            "festivals": [
+                "beautiful-days"
+            ]
+        },
+        "maui-waui": {
+            "name": "Maui Waui",
+            "promoter_id": "maui_waui_events",
+            "type": "stage",
+            "prebooked": true,
+            "open_mic": false,
+            "popUp": false,
+            "festivals": [
+                "bearded-theory"
+            ]
+        },
+        "knockerdown-inn": {
+            "type": "stage",
+            "open_mic": true,
+            "popUp": false,
+            "festivals": [
+                "bearded-theory"
+            ]
+        },
+        "tiny-tea-tent": {
+            "name": "Tiny Tea Tent",
+            "prebooked": false,
+            "open_mic": false,
+            "popUp": true,
+            "festivals": [
+                "beautiful-days"
+            ]
+        }
+    },
+    "festivals": {
+        "bearded-theory": {
+            "independent_stages": [
+                "maui-waui",
+                "convoy-cabaret",
+                "magic-teapot",
+                "knockerdown-inn",
+                "something-else"
+            ]
+        },
+        "beautiful-days": {
+            "independent_stages": [
+                "magic-teapot",
+                "rebel-tent",
+                "tiny-tea-tent"
+            ]
+        },
+        "wickham_festival": {
+            "independent_stages": [
+                "underground-overground-stage",
+                "magic-teapot"
+            ]
+        },
+        "trowbridge-festival": {
+            "promoter_id": "trowbridge_pump",
+            "url": "https://www.trowbridgefestival.co.uk/"
+        },
+        "incider": {
+            "promoter_id": "fuelled_by_cider"
+        },
+        "outcider": {
+            "promoter_id": "fuelled_by_cider"
+        },
+        "cursus": {
+            "promoter_id": "fuelled_by_cider"
+        },
+        "mad-dog-mcrea-weekender": {
+            "promoter_id": "fuelled_by_cider"
+        },
+        "grass_roots_grazin": {
+            "name": "Grass Roots Grazin'",
+            "promoter_id": "the_music_baa"
+        },
+        "gig_in_a_field": {
+            "name": "Gig In a Field",
+            "promoter_id": "wroot_rocks",
+            "location_id": "",
+            "booking_period": "",
+            "booking_url": "",
+            "url": "",
+            "ticket_url": "",
+            "open_mic": true,
+            "type": "grassroots",
+            "runnings": {
+                "giaf9": {
+                    "name": "Gig In a Field 9",
+                    "short_name": "GIAF9",
+                    "year": 2027,
+                    "dates": {
+                        "start": "06/08/2027",
+                        "end": "07/08/2027",
+                        "early": "05/08/2027"
+                    },
+                    "ticket_url": "",
+                    "event_flyer": "",
+                    "event_flyers": []
+                }
+            }
+        },
+        "ey_up_mi_duck": {
+            "name": "Ey Up Mi Duck",
+            "promoter_id": "wroot_rocks",
+            "location_id": "",
+            "booking_url": "",
+            "booking_period": "",
+            "type": "grassroots",
+            "open_mic": true,
+            "runnings": {
+                "ey-up-mi-duck-2027": {
+                    "dates": {
+                        "start": "07/05/2027",
+                        "end": "09/05/2027",
+                        "early": "06/05/2027"
+                    },
+                    "open_mic_times": "",
+                    "event_flyer": ""
+                }
+            }
+        },
+        "exeter-story-fix-2026": {
+            "name": "Exeter Story Fix 2026",
+            "short_name": "Storyfix 2026",
+            "start_date": "27/11/2026",
+            "end_date": "28/11/2026",
+            "primary_type": "storytelling",
+            "venue_id": "",
+            "ticket_url": "https://artemis-storytelling.co.uk/tickets",
+            "website": "https://artemis-storytelling.co.uk/storyfix",
+            "facebook": "",
+            "description": "",
+            "event_flyers": [
+                "exeter_story_fix_2026_flyer.png",
+                "exeter_story_fix_2026a_flyer.png",
+                "exeter_story_fix_2026b_flyer.png/"
+            ],
+            "performers": [
+                {
+                    "performer_id": "nick-hennessey",
+                    "role": ""
+                }
+            ],
+            "performers_tbc": true,
+            "stages": [],
+            "schedule": [
+                {
+                    "date": "27/11/2026",
+                    "time": "19:30-21:30",
+                    "venue_id": "cygnet-theatre-exeter",
+                    "name": "Opening Night at Cygnet Theatre",
+                    "host_id": "sharon-jacksties",
+                    "type": "storytelling_shows",
+                    "performer_ids": [
+                        "amy-douglas",
+                        "henry-everett",
+                        "inez-aponte",
+                        "rebecca-bletcher"
+                    ]
+                },
+                {
+                    "date": "28/11/2026",
+                    "time": "16:00-19:00",
+                    "venue_id": "priory-room-mint-methodist",
+                    "name": "Story Round",
+                    "host_id": "sharon-jacksties",
+                    "type": "storyround",
+                    "performer": "Led by Sharon Jacksties"
+                },
+                {
+                    "date": "28/11/2026",
+                    "time": "10:00-12:00",
+                    "venue_id": "st-nicholas-priory-exeter",
+                    "name": "Two Boats, One River: where song and speech meet",
+                    "description": "Music and storytelling are deeply connected. They share cadence and pace, and underscore each other perfectly. But what about the voice? This workshop will focus on the inherent musicality and rhythm of language. Beginning from the premise that all natural speech is musical in its chime and chatter, we will explore the full vocal range of speech, playing with pitch, tone and rhythm, and finding ways to support and enhance the telling of a story.",
+                    "limited_places": 20,
+                    "booking_url": "https://artemis-storytelling.co.uk/tickets",
+                    "host_id": "nick-hennessey",
+                    "type": "workshop"
+                },
+                {
+                    "date": "28/11/2026",
+                    "time": "13:00-14:30",
+                    "venue_id": "st-nicholas-priory-exeter",
+                    "name": "Showcase of new work from up-and-coming storytellers",
+                    "description": "Free tickets available for storytelling club organisers/storytelling venue promoters and we have limited budget to pay travel expenses, if this would make a big difference to your being able to attend - please contact Katy to reserve a spot.",
+                    "ticket_url": "https://artemis-storytelling.co.uk/tickets",
+                    "type": "showcase"
+                },
+                {
+                    "date": "28/11/2026",
+                    "time": "15:00-17:00",
+                    "venue_id": "st-nicholas-priory-exeter",
+                    "name": "Dynamic Landscapes in Storytelling",
+                    "description": "Through fun and challenging on-your-feet exercises, games, and discussions, this workshop acts as a tonic for the storytellers' creative toolkit! Everyone is encouraged to play and improvise as they re- examine their stories and re-vitalise them through a creative connection with dynamic landscapes.\n\n\n\nWorking solo, in partners and in groups, the exercises aim to identify the archetypal spaces in a story, peel back the layers to expose emotional connections, and create word pools to conjure up the invisible world of the story.\n\n\n\nAnd we will examine the question, 'Where in this landscape is the storyteller?'\n\n\n\nIt will be exciting! Bring your notebooks, bring your story and bring your enthusiasm!",
+                    "limited_places": 20,
+                    "booking_url": "https://artemis-storytelling.co.uk/tickets",
+                    "host_id": "nell-phoenix",
+                    "type": "workshop"
+                },
+                {
+                    "date": "28/11/2026",
+                    "time": "19:30-21:30",
+                    "venue_id": "st-nicholas-priory-exeter",
+                    "name": "A Harper's Trade",
+                    "performer": "nick-hennessey",
+                    "type": "storytelling_shows",
+                    "ticket_url": ""
+                }
+            ]
+        }
+    },
+    "events": [],
+    "locations": {}
+}

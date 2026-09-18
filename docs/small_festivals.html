@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calendar of UK storytelling and grass roots acoustic music events, featuring traditional storytelling, spoken word, acoustic music, folk music, folk punk.">
+    <meta name="keywords"
+        content="storytelling, traditional storytelling, storytelling for adults, spoken word, events calendar, live events, story festival, storytelling festival, micro festival">
+    <title>UK Storytelling, Folk, & Grass Roots Music Festivals — Grass Roots Scene</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    <link rel="stylesheet" href="shared-styles.css">
+    <link rel="stylesheet" href="small_festivals-styles.css">
+</head>
+
+<body class="page-festival">
+
+    <nav class="site-nav" aria-label="Site navigation">
+        <a href="index.html">🏠 Home</a>
+        <a href="promoters.html">Promoters</a>
+        <a href="small_festivals.html">Small Festivals</a>
+    </nav>
+
+    <h1>Grass Roots Scene — Small Festivals Guide</h1>
+    <h2>Directory of small, independent, grass roots music festivals.</h2>
+    <!-- ── Overview panels ─────────────────────────────────────────── -->
+
+    <div id="currentFestivalsPanel">
+        <details class="festival-panel-details" open>
+            <summary class="festival-panel-summary">
+                <span class="festival-panel-label">🎪 Happening Now</span>
+                <span class="festival-panel-hint">click to collapse</span>
+            </summary>
+            <div class="festival-panel-body" id="currentFestivalsBody"></div>
+        </details>
+    </div>
+
+    <div id="upcomingFestivalsPanel">
+        <details class="festival-panel-details" open>
+            <summary class="festival-panel-summary">
+                <span class="festival-panel-label">🗓️ Upcoming Festivals</span>
+                <span class="festival-panel-hint">click to collapse</span>
+            </summary>
+            <div class="festival-panel-body" id="upcomingFestivalsBody"></div>
+        </details>
+    </div>
+
+    <div id="pastFestivalsPanel">
+        <details class="festival-panel-details">
+            <summary class="festival-panel-summary">
+                <span class="festival-panel-label">📜 Past Festivals</span>
+                <span class="festival-panel-hint">click to expand</span>
+            </summary>
+            <div class="festival-panel-body" id="pastFestivalsBody"></div>
+        </details>
+    </div>
+
+    <!-- ── Selector ────────────────────────────────────────────────── -->
+
+    <div class="festival-controls">
+        <div class="festival-selector">
+            <label for="festivalSelect">Festival:</label>
+            <select id="festivalSelect" onchange="handleFestivalSelectChange()">
+                <option value="">Select a festival…</option>
+            </select>
+            <button onclick="loadSelectedFestival()" class="btn-primary">Show Festival</button>
+        </div>
+        <div class="share-container">
+            <button onclick="shareFestivalLink()" class="btn-secondary">🔗 Copy Shareable Link</button>
+            <button id="refreshDataBtn" onclick="refreshEventsData()" class="btn-secondary"
+                title="Bypasses the cache to fetch the latest events data immediately">🔄 Refresh Data</button>
+        </div>
+    </div>
+
+    <!-- ── Not found ───────────────────────────────────────────────── -->
+    <div id="festivalNotFound" style="display:none;" class="not-found-state">
+        <p>Festival not found. <a href="festival.html">View all festivals</a></p>
+    </div>
+
+    <!-- ── Festival detail ─────────────────────────────────────────── -->
+    <div id="festivalContent" style="display:none;">
+
+        <div class="festival-header">
+            <h2 class="festival-title" id="festivalTitle"></h2>
+            <div class="festival-subtitle" id="festivalSubtitle"></div>
+            <div class="festival-status-banner" id="festivalStatusBanner" style="display:none;"></div>
+            <div class="festival-meta-row">
+                <div id="festivalDateRange" class="festival-date-range"></div>
+                <div id="festivalVenue" class="festival-venue"></div>
+            </div>
+            <div id="festivalLinks" class="festival-links"></div>
+            <div id="festivalFlyer" class="festival-flyer" style="display:none;"></div>
+            <div id="festivalDescription" class="festival-description" style="display:none;"></div>
+            <div id="festivalPerformers" class="festival-performers" style="display:none;"></div>
+        </div>
+
+        <!-- ── Clashfinder ─────────────────────────────────────────── -->
+        <div class="festival-section" id="festivalScheduleSection" style="display:none;">
+            <div class="festival-section-header">
+                <h3 class="festival-section-heading" id="festivalScheduleHeading">Programme</h3>
+                <div class="clashfinder-controls">
+                    <label for="cfDaySelect">Day:</label>
+                    <select id="cfDaySelect" onchange="renderClashfinder()">
+                        <option value="all">All days</option>
+                    </select>
+                </div>
+            </div>
+            <div id="clashfinderContainer" class="clashfinder-outer">
+                <!-- populated by renderClashfinder() -->
+            </div>
+        </div>
+
+        <!-- ── Map + listed events ─────────────────────────────────── -->
+        <div class="layout-container">
+            <div id="map-container">
+                <div class="map-toolbar">
+                    <button onclick="resetFestivalMap()" class="btn-reset">⟲ Reset Map View</button>
+                </div>
+                <div id="map"></div>
+            </div>
+
+            <div class="festival-events-panel">
+                <h3 class="festival-section-heading" id="festivalEventsHeading">Listed Events</h3>
+                <div id="festivalEventsList"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about" id="colophon">
+        <div id="dataLastUpdated"></div>
+        <p><em>Website code hacked together by Tony Hirst in conversation with <code>Claude.ai</code>, based on code used
+                for <a href="https://newtroubadours.org"">New Troubadours</a> website.</em></p>
+            <p><strong>All data
+                    is manually sourced and manually added to the site.</strong></p>
+            <p><em>For corrections, additions, removals, etc., email: <code>montystoryteller AT gmail DOT com</code> / web:
+                    <a href=" https://montystoryteller.org/"><code>montystoryteller.org</code></a> / fb: <a
+                    href="https://www.facebook.com/montystoryteller/"><code>montystoryteller</code></a> / insta: <a
+                    href="https://www.instagram.com/montystoryteller/"><code>montystoryteller</code></a>.</em></p>
+        <p><em><code>This website does not collect cookies or tracking information. The only externally loaded resources
+                        are ones required to render the map or support audio/video media embedding and playback.</code></em>
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <script src="recurrence-engine.js"></script>
+    <script src="shared_utils.js"></script>
+    <script src="small_festivals_display.js"></script>
+</body>
+
+</html>

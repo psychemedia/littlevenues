@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Directory of grass roots music and festival promoters appropriate for possible storytelling shows.">
+    <meta name="keywords"
+        content="grass roots, acoustic music, folk punk, acoustic, acoustic singer, protest singer, folk singer">
+    <title>Grass Roots Scene — UK Grass Roots Promoters and Small Festivals</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="canonical" href="https://grassroots.newtroubadours.org/">
+
+    <link rel="stylesheet" href="shared-styles.css">
+    <style>
+        .page-intro {
+            text-align: center;
+            color: #555;
+            font-style: italic;
+            max-width: 640px;
+            margin: 0 auto 36px auto;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .tile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tile {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #4CAF50;
+            padding: 24px 20px 20px 20px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .tile:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .tile-music {
+            border-left-color: #1006c6;
+        }
+
+        .tile-icon {
+            font-size: 28px;
+            line-height: 1;
+        }
+
+        .tile-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin: 0;
+        }
+
+        .tile-music .tile-title {
+            color: #1006c6;
+        }
+
+        .tile-desc {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .tile-arrow {
+            margin-top: auto;
+            padding-top: 12px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .tile-music .tile-arrow {
+            color: #1006c6;
+        }
+
+        .tile-grey {
+            border-left-color: #888;
+        }
+
+        .tile-grey .tile-title {
+            color: #555;
+        }
+
+        .tile-grey .tile-arrow {
+            color: #888;
+        }
+
+        /* ── Club live counter ─────────────────────────── */
+        .club-counter {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+
+        .club-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 20px;
+            line-height: 1.3;
+        }
+
+        .club-badge-today {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+
+        .club-badge-week {
+            background: #f1f8e9;
+            color: #558b2f;
+            border: 1px solid #c5e1a5;
+        }
+
+        .club-badge-loading {
+            background: #f5f5f5;
+            color: #aaa;
+            border: 1px solid #e0e0e0;
+            font-weight: normal;
+        }
+
+        .club-spinner {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #ccc;
+            border-top-color: #4CAF50;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grass Roots Scene</h1>
+    <h2>Independent promoters, small festivals.</h2>
+
+    <p class="page-intro">A guide to independent, grass roots music promoters and small festivals..</p>
+
+    <div class="tile-grid">
+
+        <a class="tile" href="promoters.html" id="promoters-tile">
+            <div class="tile-title">Promoters</div>
+            <p class="tile-desc">Directory of grass roots promoters.</p>
+            <div class="tile-arrow">View promoters →</div>
+        </a>
+
+        <a class="tile" href="small_festivals.html" id="festivals-tile">
+            <div class="tile-title">Small Festivals</div>
+            <p class="tile-desc">Listings of small grass roots festivals.
+            </p>
+            <div class="tile-arrow">View small festivals →</div>
+        </a>
+
+                <a class="tile" href="independent_stages.html" id="independent-stages-tile">
+                    <div class="tile-title">Independent Stages & Tea Tents</div>
+                    <p class="tile-desc">Listings of independent festival stages / tea tents.
+                    </p>
+                    <div class="tile-arrow">View independent stages / tea tents →</div>
+                </a>
+
+    </div>
+
+    <div class="about" id="colophon">
+        <div id="dataLastUpdated"></div>
+        <p><em>Website code hacked together by Tony Hirst in conversation with <code>Claude.ai</code>, based on code used for <a href="https://newtroubadours.org"">New Troubadours</a> website.</em></p>
+        <p><strong>All data
+                is manually sourced and manually added to the site.</strong></p>
+        <p><em>For corrections, additions, removals, etc., email: <code>montystoryteller AT gmail DOT com</code> / web:
+                <a href="https://montystoryteller.org/"><code>montystoryteller.org</code></a> / fb: <a
+                    href="https://www.facebook.com/montystoryteller/"><code>montystoryteller</code></a> / insta: <a
+                    href="https://www.instagram.com/montystoryteller/"><code>montystoryteller</code></a>.</em></p>
+        <p><em><code>This website does not collect cookies or tracking information. The only externally loaded resources
+                    are ones required to render the map or support audio/video media embedding and playback.</code></em>
+        </p>
+    </div>
+
+    <script>
+        (function () {
+            // ── Schedule helpers (ported from storyclub.html) ──────
+            const DAY_MAP = { sunday: 0, monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6 };
+            const OCC_MAP = { '1st': 1, '2nd': 2, '3rd': 3, '4th': 4, 'last': 'last' };
+
+            function parseDDMMYYYY(s) {
+                if (!s) return null;
+                const [d, m, y] = s.split('/').map(Number);
+                if (!d || !m || !y) return null;
+                const dt = new Date(y, m - 1, d); dt.setHours(0, 0, 0, 0);
+                return dt;
+            }
+
+            function findNthDayInMonth(year, month, targetDay, occurrence) {
+                const lastDay = new Date(year, month + 1, 0);
+                if (occurrence === 'last') {
+                    for (let d = lastDay.getDate(); d >= 1; d--) {
+                        const t = new Date(year, month, d); t.setHours(0, 0, 0, 0);
+                        if (t.getDay() === targetDay) return t;
+                    }
+                } else {
+                    let count = 0;
+                    for (let d = 1; d <= lastDay.getDate(); d++) {
+                        const t = new Date(year, month, d); t.setHours(0, 0, 0, 0);
+                        if (t.getDay() === targetDay && ++count === occurrence) return t;
+                    }
+                }
+                return null;
+            }
+
+            function scheduledDatesInRange(schedule, from, to, exceptions) {
+                if (!schedule) return [];
+                const exSet = new Set((exceptions || []).map(s => {
+                    const d = parseDDMMYYYY(s);
+                    return d ? d.getTime() : null;
+                }).filter(Boolean));
+
+                const results = [];
+                function addIfInRange(dt) {
+                    if (!dt) return;
+                    if (dt >= from && dt <= to && !exSet.has(dt.getTime())) results.push(dt);
+                }
+
+                const sl = schedule.toLowerCase().trim();
+
+                // Pipe-separated alternating months: "1st wed (even months) | 1st thu (odd months)"
+                if (sl.includes('|')) {
+                    for (const part of sl.split('|').map(s => s.trim())) {
+                        const m = part.match(/^(.+?)\s*\((\w+)\s+months\)$/i);
+                        if (!m) continue;
+                        const tokens = m[1].trim().split(/\s+/);
+                        const [occ, day] = tokens;
+                        const cond = m[2].toLowerCase();
+                        const tDay = DAY_MAP[day]; const occNum = OCC_MAP[occ];
+                        if (tDay === undefined || !occNum) continue;
+                        const cur = new Date(from.getFullYear(), from.getMonth(), 1);
+                        while (cur <= to) {
+                            const mo = cur.getMonth() + 1;
+                            const ok = (cond === 'even' && mo % 2 === 0) || (cond === 'odd' && mo % 2 !== 0);
+                            if (ok) addIfInRange(findNthDayInMonth(cur.getFullYear(), cur.getMonth(), tDay, occNum));
+                            cur.setMonth(cur.getMonth() + 1);
+                        }
+                    }
+                    return results.sort((a, b) => a - b);
+                }
+
+                // "X and Y dayname"
+                if (sl.includes(' and ')) {
+                    const parts = sl.split(' and ');
+                    if (parts.length === 2) {
+                        const occ1str = parts[0].trim();
+                        const rest = parts[1].trim().split(/\s+/);
+                        const occ2str = rest[0], dayName = rest[1];
+                        const tDay = DAY_MAP[dayName];
+                        const occ1 = OCC_MAP[occ1str], occ2 = OCC_MAP[occ2str];
+                        if (tDay !== undefined && occ1 && occ2) {
+                            const cur = new Date(from.getFullYear(), from.getMonth(), 1);
+                            while (cur <= to) {
+                                addIfInRange(findNthDayInMonth(cur.getFullYear(), cur.getMonth(), tDay, occ1));
+                                addIfInRange(findNthDayInMonth(cur.getFullYear(), cur.getMonth(), tDay, occ2));
+                                cur.setMonth(cur.getMonth() + 1);
+                            }
+                            return results.sort((a, b) => a - b);
+                        }
+                    }
+                }
+
+                // "every dayname"
+                if (sl.startsWith('every ')) {
+                    const dayName = sl.replace('every ', '').trim();
+                    const tDay = DAY_MAP[dayName];
+                    if (tDay !== undefined) {
+                        const cur = new Date(from);
+                        while (cur.getDay() !== tDay) cur.setDate(cur.getDate() + 1);
+                        while (cur <= to) { addIfInRange(new Date(cur)); cur.setDate(cur.getDate() + 7); }
+                    }
+                    return results;
+                }
+
+                // Standard "Nth dayname"
+                const tokens = sl.split(/\s+/);
+                const occ = tokens[0], dayName = tokens[1];
+                const tDay = DAY_MAP[dayName]; const occNum = OCC_MAP[occ];
+                if (tDay !== undefined && occNum) {
+                    const cur = new Date(from.getFullYear(), from.getMonth(), 1);
+                    while (cur <= to) {
+                        addIfInRange(findNthDayInMonth(cur.getFullYear(), cur.getMonth(), tDay, occNum));
+                        cur.setMonth(cur.getMonth() + 1);
+                    }
+                }
+                return results.sort((a, b) => a - b);
+            }
+
+            // ── Count clubs meeting today / this week ─────────────────────────────
+            function countClubsInWindow(clubs, from, to) {
+                let count = 0;
+                for (const club of clubs) {
+                    // Some records use a richer, non-string schedule shape
+                    // (handled elsewhere by RecurrenceEngine) that this
+                    // simplified parser doesn't understand — skip those
+                    // rather than crash on them.
+                    if (!club.schedule || typeof club.schedule !== 'string') continue;
+                    const dates = scheduledDatesInRange(club.schedule, from, to, club.exceptions || []);
+                    if (dates.length > 0) count++;
+                }
+                return count;
+            }
+
+            function updateCounter(todayCount, weekCount) {
+                const counter = document.getElementById('club-counter');
+                if (!counter) return;
+                counter.innerHTML = '';
+
+                const mkBadge = (cls, text) => {
+                    const b = document.createElement('span');
+                    b.className = 'club-badge ' + cls;
+                    b.textContent = text;
+                    return b;
+                };
+
+                if (todayCount > 0) {
+                    counter.appendChild(mkBadge('club-badge-today',
+                        todayCount === 1 ? '1 storyclub tonight' : `${todayCount} storyclubs tonight`));
+                }
+
+                if (weekCount > 0) {
+                    counter.appendChild(mkBadge('club-badge-week',
+                        weekCount === 1 ? '1 storyclub this week' : `${weekCount} storyclubs over next seven days`));
+                }
+
+                if (todayCount === 0 && weekCount === 0) {
+                    counter.appendChild(mkBadge('club-badge-loading', 'no clubs this week'));
+                    // Override colour for zero state
+                    counter.querySelector('.club-badge').style.cssText =
+                        'background:#fafafa;color:#aaa;border:1px solid #e0e0e0;';
+                }
+            }
+
+            // ── Tiny standalone data-health LED ─────────────────────
+            // Deliberately not shared_utils.js's buildDataHealthLed() /
+            // displayDataLastUpdated() — this page doesn't load that
+            // script. Reuses the same CSS classes already defined in
+            // shared-styles.css (.data-health-led, .data-health-ok,
+            // .data-health-error, .data-updated-text, .data-health-message)
+            // so it looks and behaves the same, but only knows two states:
+            // ok / error. There's no localStorage cache on this page to
+            // fall back on, so there's no "stale-cache" (orange) state to
+            // show — a failed fetch here just means the feed is down,
+            // full stop.
+            function renderDataHealth(ok, detail) {
+                const el = document.getElementById('dataLastUpdated');
+                if (!el) return;
+                el.innerHTML = '';
+
+                const led = document.createElement('span');
+                led.className = 'data-health-led ' + (ok ? 'data-health-ok' : 'data-health-error');
+                el.appendChild(led);
+
+                const text = document.createElement('span');
+                text.className = 'data-updated-text';
+                text.textContent = ok
+                    ? `Data last refreshed: ${formatNow()}`
+                    : 'Event data unavailable';
+                el.appendChild(text);
+
+                if (ok) {
+                    const title = 'Event data feed loaded successfully';
+                    led.title = title;
+                    led.setAttribute('role', 'img');
+                    led.setAttribute('aria-label', title);
+                    return;
+                }
+
+                // Error state: title/aria-label alone isn't reachable on a
+                // touch device, so make the LED a click/keyboard-toggleable
+                // button that reveals the detail message next to it —
+                // same pattern as wireDataHealthLedClick() in
+                // shared_utils.js, just inlined here rather than shared.
+                const promptText = 'Event data unavailable — click for details';
+                led.title = promptText;
+                led.setAttribute('aria-label', promptText);
+                led.classList.add('data-health-led-clickable');
+                led.setAttribute('tabindex', '0');
+                led.setAttribute('role', 'button');
+                led.setAttribute('aria-expanded', 'false');
+
+                const panel = document.createElement('span');
+                panel.className = 'data-health-message';
+                panel.setAttribute('aria-live', 'polite');
+                panel.style.display = 'none';
+                panel.textContent = detail || 'No further detail available.';
+                el.appendChild(panel);
+
+                const toggle = () => {
+                    const nowVisible = panel.style.display === 'none';
+                    panel.style.display = nowVisible ? 'block' : 'none';
+                    led.setAttribute('aria-expanded', String(nowVisible));
+                };
+                led.onclick = toggle;
+                led.onkeydown = (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggle();
+                    }
+                };
+            }
+
+            function formatNow() {
+                return new Date().toLocaleString('en-GB', {
+                    hour: 'numeric', minute: '2-digit', hour12: true,
+                    day: 'numeric', month: 'short'
+                });
+            }
+
+            async function loadClubCounts() {
+                try {
+                    const resp = await fetch('grass_roots_normalized.json');
+                    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                    const data = await resp.json();
+                    const clubs = data.events || [];
+
+                    const today = new Date(); today.setHours(0, 0, 0, 0);
+                    const todayEnd = new Date(today); todayEnd.setHours(23, 59, 59, 999);
+
+                    // "This week" = today through next 6 days (7-day window)
+                    const weekEnd = new Date(today);
+                    weekEnd.setDate(weekEnd.getDate() + 6);
+                    weekEnd.setHours(23, 59, 59, 999);
+
+                    const todayCount = countClubsInWindow(clubs, today, todayEnd);
+                    const weekCount = countClubsInWindow(clubs, today, weekEnd);
+
+                    updateCounter(todayCount, weekCount);
+                    renderDataHealth(true);
+                } catch (e) {
+                    // Remove the counter spinner and paint the LED red —
+                    // no more silent failure now that there's a visible
+                    // indicator to reflect it. Logged to console too, since
+                    // the LED's tooltip alone isn't always easy to trigger.
+                    console.error('loadClubCounts failed:', e);
+                    const counter = document.getElementById('club-counter');
+                    if (counter) counter.innerHTML = '';
+                    renderDataHealth(false, e && e.message);
+                }
+            }
+
+            loadClubCounts();
+        })();
+    </script>
+</body>
+
+</html>
