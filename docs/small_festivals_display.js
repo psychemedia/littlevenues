@@ -15,13 +15,26 @@ let currentFestival = null; // { key, record }
 
 function getFestivalURLParams() {
   const p = new URLSearchParams(window.location.search);
-  return { festivalId: p.get("festival"), cacheBuster: p.get("v") };
+  return {
+    festivalId: p.get("festival"),
+    runningKey: p.get("running"),
+    cacheBuster: p.get("v"),
+  };
 }
 
-function updateURL(festivalId) {
-  const p = new URLSearchParams({ festival: festivalId });
+/**
+ * @param {string} festivalId
+ * @param {string|null} [runningKey] - which of the festival's runnings this
+ *   link points at, when it matters (a specific past/future occurrence of a
+ *   recurring festival). Omitted for festivals with no runnings, or to link
+ *   to the "best guess" running (see pickFestivalRunning).
+ */
+function updateURL(festivalId, runningKey) {
+  const params = { festival: festivalId };
+  if (runningKey) params.running = runningKey;
+  const p = new URLSearchParams(params);
   window.history.pushState(
-    { festivalId },
+    { festivalId, runningKey: runningKey || null },
     "",
     `${window.location.pathname}?${p}`,
   );
@@ -32,7 +45,11 @@ function shareFestivalLink() {
     alert("No festival selected");
     return;
   }
-  const url = `${location.origin}${location.pathname}?festival=${encodeURIComponent(currentFestival.key)}`;
+  const params = new URLSearchParams({ festival: currentFestival.key });
+  if (currentFestival.runningKey) {
+    params.set("running", currentFestival.runningKey);
+  }
+  const url = `${location.origin}${location.pathname}?${params}`;
   navigator.clipboard
     .writeText(url)
     .then(() => {
@@ -143,7 +160,15 @@ function pickFestivalRunning(fest) {
  * to the picked running's dates.
  * @returns {{start: string|null, end: string|null}}
  */
-function getFestivalDates(fest) {
+/**
+ * @param {object} fest
+ * @param {string} [runningKey] - resolve this specific running's dates
+ *   instead of the festival's direct dates / auto-picked running.
+ */
+function getFestivalDates(fest, runningKey) {
+  if (runningKey && fest.runnings?.[runningKey]) {
+    return extractDates(fest.runnings[runningKey]);
+  }
   const direct = extractDates(fest);
   if (direct.start) return direct;
   const running = pickFestivalRunning(fest);
@@ -151,6 +176,48 @@ function getFestivalDates(fest) {
     return extractDates(running.r);
   }
   return { start: null, end: null };
+}
+
+/**
+ * Expand a festival into one listing entry per relevant occurrence.
+ *
+ * A recurring festival's runnings can straddle past and future
+ * independently — e.g. Mad Dog Mcrea Weekender's 2026 running has already
+ * happened while its 2027 running is still to come. Collapsing that down to
+ * a single "best" running (pickFestivalRunning) is right for a detail page
+ * that needs one answer, but wrong for any date-bucketed listing (current /
+ * upcoming / past): it would silently drop every running except the one
+ * picked. This instead returns every running as its own entry, so each can
+ * be bucketed and displayed independently.
+ *
+ * Festivals with no runnings (flat start_date/end_date, a nested dates{}
+ * object, or a bare single date directly on the festival) still just
+ * produce a single entry, with runningKey: null.
+ *
+ * @returns {Array<{festId: string, fest: object, runningKey: string|null, running: object|null, dates: {start,end}}>}
+ */
+function expandFestivalRunnings(festId, fest) {
+  const direct = extractDates(fest);
+  if (direct.start) {
+    return [{ festId, fest, runningKey: null, running: null, dates: direct }];
+  }
+  const runnings = fest.runnings;
+  if (
+    runnings &&
+    typeof runnings === "object" &&
+    Object.keys(runnings).length
+  ) {
+    return Object.entries(runnings)
+      .map(([runningKey, running]) => ({
+        festId,
+        fest,
+        runningKey,
+        running,
+        dates: extractDates(running),
+      }))
+      .filter((entry) => entry.dates.start);
+  }
+  return [];
 }
 
 /**
@@ -167,12 +234,20 @@ function getFestivalVenueId(fest) {
  * things like ticket_url / event_flyer(s) / a running-specific name can
  * live on either, depending on whether the festival has runnings at all.
  */
-function getFestivalDisplayFields(fest) {
-  const running = pickFestivalRunning(fest);
+/**
+ * @param {object} fest
+ * @param {string} [runningKey] - use this specific running rather than
+ *   letting pickFestivalRunning auto-choose one.
+ */
+function getFestivalDisplayFields(fest, runningKey) {
+  const running =
+    runningKey && fest.runnings?.[runningKey]
+      ? { key: runningKey, r: fest.runnings[runningKey] }
+      : pickFestivalRunning(fest);
   const r = running?.r || {};
   return {
     running,
-    dates: getFestivalDates(fest),
+    dates: getFestivalDates(fest, runningKey),
     ticketUrl: fest.ticket_url || r.ticket_url || "",
     eventFlyer: fest.event_flyer || r.event_flyer || "",
     eventFlyers:
@@ -182,9 +257,14 @@ function getFestivalDisplayFields(fest) {
   };
 }
 
-function getFestivalStatus(fest) {
+/**
+ * @param {object} fest
+ * @param {string} [runningKey] - resolve status against this specific
+ *   running rather than the auto-picked one.
+ */
+function getFestivalStatus(fest, runningKey) {
   const today = getTodayMidnight();
-  const { start: startStr, end: endStr } = getFestivalDates(fest);
+  const { start: startStr, end: endStr } = getFestivalDates(fest, runningKey);
   const start = parseDateString(startStr);
   const end = parseDateString(endStr);
   if (!start || !end) return "unknown";
@@ -1043,15 +1123,32 @@ function buildUntimedCard(item, today) {
 // Display the full festival detail
 // ---------------------------------------------------------------------------
 
-function displayFestival(festivalId) {
+/**
+ * @param {string} festivalId
+ * @param {string} [runningKey] - show this specific running (e.g. arrived
+ *   at from a "past"/"upcoming" listing card for one particular occurrence
+ *   of a recurring festival) rather than letting pickFestivalRunning guess.
+ *   Only affects the fields that can vary by running (dates, status,
+ *   ticket_url, flyers) — schedule/performers/map are festival-level, not
+ *   per-running, per grass_roots_schema.json.
+ */
+function displayFestival(festivalId, runningKey) {
   const fest = (eventsData.festivals || {})[festivalId];
   if (!fest) {
     document.getElementById("festivalContent").style.display = "none";
     document.getElementById("festivalNotFound").style.display = "block";
     return;
   }
+  // A runningKey that doesn't actually belong to this festival (e.g. a
+  // stale/hand-edited URL) is ignored rather than trusted blindly.
+  const effectiveRunningKey =
+    runningKey && fest.runnings?.[runningKey] ? runningKey : null;
 
-  currentFestival = { key: festivalId, record: fest };
+  currentFestival = {
+    key: festivalId,
+    record: fest,
+    runningKey: effectiveRunningKey,
+  };
   document.getElementById("festivalNotFound").style.display = "none";
   document.getElementById("festivalContent").style.display = "block";
   document.title = `${fest.name} — Grass Roots Scene`;
@@ -1065,14 +1162,25 @@ function displayFestival(festivalId) {
   const daySelect = document.getElementById("cfDaySelect");
   daySelect.innerHTML = '<option value="all">All days</option>';
 
-  // Header
-  document.getElementById("festivalTitle").textContent = fest.name;
+  // Header. When a specific running is in play and it has its own
+  // name/short_name override (or just a year), surface that so two cards
+  // for the same recurring festival (e.g. a past and an upcoming running)
+  // don't read as identical.
+  const runningRecord = effectiveRunningKey
+    ? fest.runnings[effectiveRunningKey]
+    : null;
+  document.getElementById("festivalTitle").textContent =
+    runningRecord?.name || fest.name;
+  const subtitleParts = [
+    runningRecord?.short_name || fest.short_name || "",
+    runningRecord?.year ? String(runningRecord.year) : "",
+  ].filter(Boolean);
   document.getElementById("festivalSubtitle").textContent =
-    fest.short_name || "";
+    subtitleParts.join(" — ");
 
   // Resolve schema fields that may live on the festival itself or on its
-  // picked running (see getFestivalDisplayFields).
-  const display = getFestivalDisplayFields(fest);
+  // picked (or explicitly requested) running — see getFestivalDisplayFields.
+  const display = getFestivalDisplayFields(fest, effectiveRunningKey);
   const venueId = getFestivalVenueId(fest);
 
   // Date range
@@ -1093,7 +1201,7 @@ function displayFestival(festivalId) {
   }
 
   // Status banner
-  const status = getFestivalStatus(fest);
+  const status = getFestivalStatus(fest, effectiveRunningKey);
   const statusEl = document.getElementById("festivalStatusBanner");
   const STATUS = {
     past: { cls: "festival-banner-past", text: "📅 This festival has ended." },
@@ -1615,15 +1723,31 @@ function resetFestivalMap() {
 // Overview panels
 // ---------------------------------------------------------------------------
 
+/**
+ * Builds the current/upcoming/past panels. Each festival contributes one
+ * card per relevant running (see expandFestivalRunnings) rather than one
+ * card overall, so a recurring festival with both a past and an upcoming
+ * running (e.g. Mad Dog Mcrea Weekender) shows up correctly in both
+ * sections instead of only whichever running pickFestivalRunning would
+ * have auto-picked.
+ */
 function renderFestivalPanels() {
   const festivals = Object.entries(eventsData.festivals || {});
   if (!festivals.length) return;
 
   const groups = { current: [], future: [], past: [] };
   festivals.forEach(([id, f]) => {
-    const s = getFestivalStatus(f);
-    (groups[s] || groups.future).push([id, f]);
+    expandFestivalRunnings(id, f).forEach((entry) => {
+      const s = getFestivalStatus(f, entry.runningKey);
+      (groups[s] || groups.future).push(entry);
+    });
   });
+
+  const byStartAsc = (a, b) =>
+    parseDateString(a.dates.start) - parseDateString(b.dates.start);
+  groups.current.sort(byStartAsc);
+  groups.future.sort(byStartAsc);
+  groups.past.sort((a, b) => byStartAsc(b, a)); // most recently ended first
 
   renderFestivalPanel(
     "currentFestivalsBody",
@@ -1657,31 +1781,42 @@ function renderFestivalPanel(bodyId, wrapperId, entries, hideClass) {
     wrapper.classList.add(hideClass);
     return;
   }
+  // Undo a previous empty-state hide, in case this is a re-render (e.g.
+  // after "Refresh Data") where this panel now has entries.
+  wrapper.classList.remove(hideClass);
 
   const grid = document.createElement("div");
   grid.className = "festival-cards-grid";
-  entries.forEach(([id, f]) => grid.appendChild(buildFestivalCard(id, f)));
+  entries.forEach((entry) => grid.appendChild(buildFestivalCard(entry)));
   body.appendChild(grid);
 }
 
-function buildFestivalCard(festId, fest) {
+/**
+ * @param {{festId: string, fest: object, runningKey: string|null, running: object|null, dates: {start,end}}} entry
+ *   One occurrence of a festival, as produced by expandFestivalRunnings —
+ *   its own dates, and (when the festival has runnings) which running it is.
+ */
+function buildFestivalCard(entry) {
+  const { festId, fest, runningKey, running, dates } = entry;
   const card = document.createElement("div");
   card.className = "festival-overview-card";
   card.style.cursor = "pointer";
 
-  const { start: startStr, end: endStr } = getFestivalDates(fest);
-  const start = parseDateString(startStr);
-  const end = parseDateString(endStr);
+  const start = parseDateString(dates.start);
+  const end = parseDateString(dates.end);
 
   const name = document.createElement("div");
   name.className = "festival-card-name";
-  name.textContent = fest.name;
+  name.textContent = running?.name || fest.name;
   card.appendChild(name);
 
-  if (fest.short_name) {
+  const shortName = running?.short_name || fest.short_name;
+  if (shortName || running?.year) {
     const sh = document.createElement("div");
     sh.className = "festival-card-short";
-    sh.textContent = fest.short_name;
+    sh.textContent = [shortName, running?.year ? String(running.year) : ""]
+      .filter(Boolean)
+      .join(" — ");
     card.appendChild(sh);
   }
 
@@ -1749,8 +1884,10 @@ function buildFestivalCard(festId, fest) {
 
   card.addEventListener("click", () => {
     document.getElementById("festivalSelect").value = festId;
-    displayFestival(festId);
-    updateURL(festId);
+    // Pass the specific running this card represents, so clicking the past
+    // 2026 running of a festival doesn't land on its upcoming 2027 one.
+    displayFestival(festId, runningKey);
+    updateURL(festId, runningKey);
     document
       .getElementById("festivalContent")
       .scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1820,7 +1957,7 @@ setCanonical("festival");
     if (el) el.innerHTML = loadingHTML;
   });
 
-  const { festivalId, cacheBuster } = getFestivalURLParams();
+  const { festivalId, runningKey, cacheBuster } = getFestivalURLParams();
 
   const result = await loadEventsData(
     cacheBuster || (forcedRefresh ? Date.now() : null),
@@ -1859,7 +1996,7 @@ setCanonical("festival");
 
     if (festivalId) {
       document.getElementById("festivalSelect").value = festivalId;
-      displayFestival(festivalId);
+      displayFestival(festivalId, runningKey);
       setTimeout(() => {
         document
           .getElementById("festivalContent")

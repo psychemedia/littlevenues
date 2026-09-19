@@ -106,6 +106,39 @@ function getFestivalDates(fest) {
   return { start: null, end: null };
 }
 
+/**
+ * Expand a festival into one entry per relevant running (see the identical
+ * helper in small_festivals_display.js / promoters.js). A stage's own
+ * `festivals` array can't record *which* running it appeared at — it just
+ * names the festival — so if that festival is a recurring one with several
+ * runnings, all of them are relevant and should be shown, rather than
+ * collapsing to whichever one getFestivalDates()/pickFestivalRunning()
+ * would auto-pick. Festivals with no runnings still just produce a single
+ * entry.
+ * @returns {Array<{runningKey: string|null, running: object|null, dates: {start,end}}>}
+ */
+function expandFestivalRunnings(fest) {
+  const direct = extractDates(fest);
+  if (direct.start) {
+    return [{ runningKey: null, running: null, dates: direct }];
+  }
+  const runnings = fest.runnings;
+  if (
+    runnings &&
+    typeof runnings === "object" &&
+    Object.keys(runnings).length
+  ) {
+    return Object.entries(runnings)
+      .map(([runningKey, running]) => ({
+        runningKey,
+        running,
+        dates: extractDates(running),
+      }))
+      .filter((entry) => entry.dates.start);
+  }
+  return [];
+}
+
 function formatDateRange(dates) {
   const start = parseDateString(dates.start);
   const end = parseDateString(dates.end);
@@ -375,19 +408,38 @@ function renderIndependentStageFestivals(stage) {
     return;
   }
 
+  // One row per festival occurrence, not per festival — the stage record
+  // only names the festival, not which running it appeared at, so if that
+  // festival is recurring with several runnings, all of them are relevant.
+  const rows = [];
   ids.forEach((festId) => {
     const fest = festivalsLookup[festId];
+    if (!fest) {
+      rows.push({ festId, fest: null, running: null, dates: null });
+      return;
+    }
+    const occurrences = expandFestivalRunnings(fest);
+    if (!occurrences.length) {
+      rows.push({ festId, fest, running: null, dates: null });
+    } else {
+      occurrences.forEach((occ) =>
+        rows.push({ festId, fest, running: occ.running, dates: occ.dates }),
+      );
+    }
+  });
+
+  rows.forEach(({ festId, fest, running, dates }) => {
     const row = document.createElement("a");
     row.className = "stage-list-item";
     row.href = `small_festivals.html?festival=${encodeURIComponent(festId)}`;
 
     const name = document.createElement("div");
     name.className = "stage-list-item-name";
-    name.textContent = fest ? fest.name : festId;
+    name.textContent = running?.name || (fest ? fest.name : festId);
     row.appendChild(name);
 
     if (fest) {
-      const dateRange = formatDateRange(getFestivalDates(fest));
+      const dateRange = dates ? formatDateRange(dates) : "";
       if (dateRange) {
         const meta = document.createElement("div");
         meta.className = "stage-list-item-meta";

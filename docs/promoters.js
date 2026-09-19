@@ -91,6 +91,37 @@ function getFestivalDates(fest) {
   return { start: null, end: null };
 }
 
+/**
+ * Expand a festival into one entry per relevant running (see the identical
+ * helper in small_festivals_display.js). A promoter's linked festival can be
+ * a recurring one with both a past and an upcoming running (e.g. a
+ * promoter's own weekender series) — showing only one row for it via
+ * getFestivalDates()/pickFestivalRunning() would silently drop the others.
+ * Festivals with no runnings still just produce a single entry.
+ * @returns {Array<{runningKey: string|null, running: object|null, dates: {start,end}}>}
+ */
+function expandFestivalRunnings(fest) {
+  const direct = extractDates(fest);
+  if (direct.start) {
+    return [{ runningKey: null, running: null, dates: direct }];
+  }
+  const runnings = fest.runnings;
+  if (
+    runnings &&
+    typeof runnings === "object" &&
+    Object.keys(runnings).length
+  ) {
+    return Object.entries(runnings)
+      .map(([runningKey, running]) => ({
+        runningKey,
+        running,
+        dates: extractDates(running),
+      }))
+      .filter((entry) => entry.dates.start);
+  }
+  return [];
+}
+
 function formatDateRange(dates) {
   const start = parseDateString(dates.start);
   const end = parseDateString(dates.end);
@@ -270,19 +301,38 @@ function renderPromoterFestivals(promoter) {
     return;
   }
 
+  // One row per festival occurrence, not per festival — a recurring
+  // festival (e.g. a promoter's own weekender series) can have a past and
+  // an upcoming running at once, and both should show up here.
+  const rows = [];
   ids.forEach((festId) => {
     const fest = festivalsLookup[festId];
+    if (!fest) {
+      rows.push({ festId, fest: null, running: null, dates: null });
+      return;
+    }
+    const occurrences = expandFestivalRunnings(fest);
+    if (!occurrences.length) {
+      rows.push({ festId, fest, running: null, dates: null });
+    } else {
+      occurrences.forEach((occ) =>
+        rows.push({ festId, fest, running: occ.running, dates: occ.dates }),
+      );
+    }
+  });
+
+  rows.forEach(({ festId, fest, running, dates }) => {
     const row = document.createElement("a");
     row.className = "promoter-list-item";
     row.href = `small_festivals.html?festival=${encodeURIComponent(festId)}`;
 
     const name = document.createElement("div");
     name.className = "promoter-list-item-name";
-    name.textContent = fest ? fest.name : festId;
+    name.textContent = running?.name || (fest ? fest.name : festId);
     row.appendChild(name);
 
     if (fest) {
-      const dateRange = formatDateRange(getFestivalDates(fest));
+      const dateRange = dates ? formatDateRange(dates) : "";
       if (dateRange) {
         const meta = document.createElement("div");
         meta.className = "promoter-list-item-meta";
@@ -314,7 +364,10 @@ function renderPromoterStages(promoter) {
 
     const name = document.createElement("div");
     name.className = "promoter-list-item-name";
-    name.textContent = stage ? stage.name : stageId;
+    // A few stage records (e.g. "knockerdown-inn") don't have a name field
+    // yet — stage.name would be undefined there, not just falsy-and-empty,
+    // so fall back to a humanized id rather than showing "undefined".
+    name.textContent = stage ? stage.name || getPromoterDisplayName(stageId, stage) : stageId;
     row.appendChild(name);
 
     if (stage) {
