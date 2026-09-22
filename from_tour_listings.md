@@ -342,6 +342,10 @@ Sat, Oct 29, 2022
 Tony Wright
 The Ship Aground, Stafford
 
+## Mad Dog Mcrea
+
+<img width="1800" height="2250" alt="image" src="https://github.com/user-attachments/assets/baeb7168-132f-465d-9424-f2098fd64b15" />
+
 
 ## Paul Armfield
 
