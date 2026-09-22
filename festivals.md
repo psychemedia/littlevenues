@@ -109,6 +109,21 @@ https://festivalcalendar.uk/
   - Early June
   - Application: ?
 
+
+- Bradninch Music Festival
+  - https://bradninchmusicfestival.co.uk/
+  - Early/mid June
+  - Exeter / Tiverton
+
+<img width="960" height="1200" alt="image" src="https://github.com/user-attachments/assets/43d9ea2a-ef42-49ea-bf7c-67da12ade45d" />
+
+- Darts Farm Summer Festival
+  - Early/mid june
+  - https://www.dartsfarm.co.uk/events/darts-farm-summer-festival
+  - Topsham, Exeter
+  
+<img width="1080" height="1528" alt="image" src="https://github.com/user-attachments/assets/dc46783e-827f-49b6-a277-e59189e75cc2" />
+
 - Ludlow Fringe
   - https://www.ludlowfringe.co.uk/
   - Shropshire
