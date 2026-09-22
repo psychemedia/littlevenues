@@ -4,6 +4,10 @@ Is there scope for booking stroytellers into small venues?
 
 First up, what sorts of venues are there?
 
+## Samantics
+
+<img width="1080" height="1528" alt="image" src="https://github.com/user-attachments/assets/3fb66e22-1322-4016-97ac-41a45dac8c83" />
+
 
 ## Attila the Stockbroker
 
@@ -61,6 +65,9 @@ MARCH 1ST AUSTELL Arts Centre
 
 
 ## Gaz Brookfield:
+
+<img width="1079" height="1080" alt="image" src="https://github.com/user-attachments/assets/eacdee53-1878-4fc3-879a-dab84ace39e6" />
+
 
 <img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/31af5406-5599-4e26-a178-1aea8b4f32c3" />
 
@@ -199,7 +206,10 @@ Bristol, Fleece
 
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/686853f4-394f-4b5e-8b8f-69d2e21ed2bb)
 
-## Three Daft Monkeys
+## 3 Daft Monkeys
+
+<img width="1080" height="1349" alt="image" src="https://github.com/user-attachments/assets/c909c316-0926-420e-91ab-475fdd16e9fe" />
+
 
 <img width="2048" height="2048" alt="image" src="https://github.com/user-attachments/assets/8e55be0d-7be0-4df4-9770-34a58428168c" />
 
@@ -242,6 +252,9 @@ Bristol, Fleece
 ![image](https://github.com/psychemedia/littlevenues/assets/82988/53e8dec9-da46-4dce-b4e3-d9865faec911)
 
 ## Tony Wright
+
+
+<img width="1080" height="1920" alt="image" src="https://github.com/user-attachments/assets/d94e9714-e02d-4ed9-aa0f-dceecd64599a" />
 
 <img width="1440" height="1440" alt="image" src="https://github.com/user-attachments/assets/34ab4a33-f9a0-48b4-9026-29a155223e0c" />
 
