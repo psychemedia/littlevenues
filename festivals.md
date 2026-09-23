@@ -281,6 +281,10 @@ https://festivalcalendar.uk/
   - Mid August?
   - Application: ?
 
+- Festival Bella Ciao
+  - Pealie's Barn Cockleberry Farm, East Cowton Northallerton, North Yorkshire UK, DL7 0JA
+  - https://www.pealiesbarn.co.uk/event-details-registration/festival-bella-ciao
+
 - Minehead Bay festival
   - Late August
   - Minehead Bay
