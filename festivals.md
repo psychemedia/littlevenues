@@ -21,7 +21,12 @@ https://festivalcalendar.uk/
   - Forest of Dean
   - February
   - Application: ?
- 
+
+- Bec Fest
+  - Late aApril
+  - Stonehenge campsite
+  - https://www.facebook.com/bec.fest.3
+
 - Todmorden Folk Festival
   - https://todfolkfest.co.uk/
   - early May
