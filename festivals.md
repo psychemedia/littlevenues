@@ -178,6 +178,11 @@ https://festivalcalendar.uk/
   - Early July
   - Application: ?
 
+- Underground Fayre
+  - Cotswolds
+  - Early July
+  - https://undergroundfayre.co.uk/
+
 - Buxton Fringe
   - https://www.buxtonfringe.org.uk/
   - Buxton
