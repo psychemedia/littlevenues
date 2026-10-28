@@ -108,6 +108,11 @@ https://festivalcalendar.uk/
   - Mid-June
   - Bideford
  
+- Wychwood Festival
+  - early June
+  - Cheltenham
+  - https://wychwoodfestival.com/information/get-involved
+ 
 - Wimborne Minster Folk Festival
   - https://www.wmff.co.uk/
   - Wimborne Minster, Dorset
