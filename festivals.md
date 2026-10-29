@@ -151,6 +151,11 @@ https://festivalcalendar.uk/
   - Wiltshire
   - Late June
 
+- Days in the Sun
+  - late June
+  - Gloucestershire
+  - https://www.daysinthesunfestival.com/
+  - 
 - Barnstaple Fringe / TheatreFest
   - https://www.theatrefest.co.uk/program/shows
   - Barnstaple, North Devon
@@ -357,22 +362,22 @@ https://festivalcalendar.uk/
 
 - South Downs Music Festival
   - https://southdownsfolkfest.co.uk/ https://www.facebook.com/SouthdownsFolkFestival/#
-  - Mid-September 
+  - Mid-September
 
 - Cornwall Cider Festival
   - Second weekend September
   - Penhallow, Cornwall
   - https://www.cornwallciderfestival.co.uk/
 
-- Wrootstock
-  - https://www.wrootrocks.com/
-  - Doncaster
-  - Early October
-
 - Deepdale Festival
   - https://deepdalecamping.co.uk/festival/
   - End September
   - Norfolk
+
+- Wrootstock
+  - https://www.wrootrocks.com/
+  - Doncaster
+  - Early October
 
 - Faversham Fringe
   - https://favershamfringe.co.uk/take-part-in-faversham-fringe
